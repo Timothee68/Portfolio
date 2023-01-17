@@ -62,10 +62,6 @@ figcaption{
 /* fin général */
 
 /* header */
-.nav-bar-sticky{
-    position: sticky;
-    top: 0;
-}
 
 .nav-bar{
     width: 100%;
