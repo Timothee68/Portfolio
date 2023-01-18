@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="icon" href="public/img/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Portfolio de timothée lucarelli Développeur web junior en back-end et front-end">
+    <meta name="description" content="Portfolio de timothée lucarelli Développeur web junior plusieurs projets sont présenter et son parcours est décris ainsi que ces différentes compétences">
+    <!-- linkedin -->
+    <meta property="og:type" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <meta property="og:url" content="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/">
+    <meta property="og:title" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <meta property="og:description" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <meta property="og:image" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <!-- github -->
+    <meta property="og:type" content="Github de timothée lucarelli dévellopeur web junior">
+    <meta property="og:url" content="https://github.com/Timothee68">
+    <meta property="og:title" content="Github de timothée lucarelli dévellopeur web junior">
+    <meta property="og:description" content="Github de timothée lucarelli dévellopeur web junior">
+    <meta property="og:image" content="Github de timothée lucarelli dévellopeur web junior">
+
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 576px)" href="public/css/telephone.css" type="text/css">
     <link rel="stylesheet" media="screen and (min-width: 577px) and (max-width: 920px)" href="public/css/tablette.css" type="text/css">
@@ -13,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
-    <title>Portfolio</title>
+    <title>Portfolio de Timothée Lucarelli</title>
 </head>
 <body>
     <header>
@@ -24,7 +40,7 @@
                    <img class="imgLogo" src="public/img/monogram-logo-letter-t-l-260nw-1-removebg-preview.png" alt="Linkedin icônes créées par riajulislam - Flaticon">
                 </figure>
                 <a class="lien" href="#aPropos">À propos</a>
-                <a class="lien" href="#projet">Projet</a>
+                <a class="lien" href="#projet">Projets</a>
                 <a class="lien" href="#contact">Contact</a>
     
                 <figure class="resauxSocial">
@@ -65,13 +81,14 @@
             <h2 class="title-hard-skills">Hard Skills</h2>
             <div class="container-boite">
 
-                <div class="boite">
+                <div class="boite" id="togg1">
 
-                    <div class="boite-logo" id="togg1">
+                    <div class="boite-logo">
                         <h4  id="front-end" class="title-dev">Front développement</h4> 
                         <img class="iconeHardSkills" src="public/img/coding.png" alt="Coding icons created by Kiranshastry - Flaticon">
-                    </div>   
-                    <p class="p-boite">Je développe des sites dynamiques et statics</p>
+                    </div>
+                    <p class="p-boite">Je développe des sites dynamiques et statiques</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
 
                 </div>
 
@@ -83,8 +100,8 @@
                     <!-- </div> -->
                     <div class="hard-skills-ul-container">
                         <H3 class="title-skills">Front-end</H3>
+                        <P>JE CODE AVEC</P>
                         <ul class="hard-skills-ul">
-                            <h4>JE CODE AVEC</h4>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
@@ -102,8 +119,8 @@
                         <h4 id="back-end" class="title-dev" >Back développement</h4>
                         <img class="iconeHardSkills" src="public/img/promo.png" alt=" Code icons created by Freepik - Flaticon">
                     </div>  
-                    <p class="p-boite">Je développe des sites web coté serveur</p>
-
+                    <p class="p-boite">Je développe des sites web côté serveur</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d2" style="display: none;">
@@ -114,8 +131,8 @@
                     
                     <div class="hard-skills-ul-container">
                         <H3 class="title-skills">Back-end</H3>
+                        <P>JE CODE AVEC</P>
                         <ul class="hard-skills-ul">
-                            <h4>JE CODE AVEC</h4>
                             <li>PHP 7/8</li>
                             <li>MySQL</li>
                             <li>JAVA</li>
@@ -132,8 +149,8 @@
                         <h4 id="outil" class="title-dev">Mes outils</h4> 
                         <img class="iconeHardSkills" src="public/img/reglages.png" alt="Equipement icônes créées par Freepik - Flaticon">
                     </div>  
-                    <p class="p-boite">J'utilise des outils qui complètes mes acquis</p>
-
+                    <p class="p-boite">J'utilise des outils qui complètent mes acquis</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d3" style="display: none;">
@@ -144,8 +161,8 @@
 
                     <div class="hard-skills-ul-container">
                         <H3 class="title-skills">Environement de travail</H3>
+                        <P>J'utilise </P>
                         <ul class="hard-skills-ul">
-                            <h4>J'utilise </h4>
                             <li>Suite Office</li>
                             <li>Visual Studio Code</li>
                             <li>Figma</li>
@@ -160,11 +177,11 @@
                 <div class="boite" id="togg4">
 
                     <div class="boite-logo">
-                        <h4 id="transverse" class="title-dev">Mes autres Compétences</h4> 
+                        <h4 id="transverse" class="title-dev">Mes autres compétences</h4> 
                         <img class="iconeHardSkills" src="public/img/competences.png" alt="Compétence icônes créées par Eucalyp - Flaticon">
                     </div>   
-                    <p class="p-boite">J'utilise des Méthodes et compétances pour être plus performant</p>
-
+                    <p class="p-boite">J'utilise plusieurs logiques de développement</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d4" style="display: none;">
@@ -175,19 +192,24 @@
                     
                     <div class="hard-skills-ul-container">
                         <H3 class="title-skills">Téchnique de dév.</H3>
+                        <p>Les méthodes</p>
                         <ul class="hard-skills-ul">
-                            <h4>Les méthodes</h4>
                             <li>Agile</li>
                             <li>SCRUM</li>
                             <li>Merise</li>
-                            <h4>Autres atouts</h4>
+                        </ul> 
+                        <P>Autres atouts</P>
+                        <ul class="hard-skills-ul">
                             <li>SEO</li>
                             <li>MédiaQuerry</li>
-                            <h4>Les modèles de conception</h4>
+                        </ul>    
+                            <P>Les modèles de conception</P>
+                        <ul class="hard-skills-ul">
                             <li>Modèle Conceptuelle de Données</li>
                             <li>Modèle Logique de Données</li>
-                            <li>Programation Orienté Objet</li>  
-                        </ul> 
+                            <li>Modèle MVC et MVP</li>
+                            <li>Programation Orienté Objet</li> 
+                        </ul>    
                     </div>
 
                 </div>
@@ -198,44 +220,43 @@
 
             <div class="container-boite">
 
-                <div class="boite">
+                <div class="boite" id="toggSoft1">
 
-                    <div id="toggSoft1" class="boite-logo">
+                    <div  class="boite-logo">
                         <h4 class="title-dev">Mes softs skills</h4>
                         <img class="iconeHardSkills" src="public/img/skills.png" alt="Skills icons created by Freepik - Flaticon">
                     </div>
                    
-                    <p>Je possède des compétences qui me définissent en tant que travailleur</p>
-
+                    <p class="p-boite">Je possède des compétences qui me définissent en tant que travailleur</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
                 </div>
 
                 <div class="afficherInfos-soft" id="s1" style="display: none;">
                    
                     <div class="soft-skills-ul-container">
                         <ul class="soft-skills">
-                            <li>Savoir prendre des décisions</li>
-                            <li>Motivé</li>
-                            <li>La résolution de problèmes</li>
-                            <li>Posséde un esprit critique</li>
-                            <li>Sait communiquer au sein d’une équipe</li>
-                            <li>Sait collaborer avec les autres</li>
-                            <li>Fais preuve de créativité</li>
+                            <li>Prise de décisions</li>
+                            <li>Résolution de problèmes</li>
+                            <li>Communication au sein d’une équipe</li>
+                            <li>Esprit critique</li>
+                            <li>Collaboration avec les autres</li>
+                            <li>Créativité</li>
                             <li>Apprend continuellement de nouvelles choses</li>
-                            <li>Organisé</li>
-                            <li>Fait preuve d’intelligence émotionnelle</li>
-                            <li>Curieux</li>
+                            <li>Organisation</li>
+                            <li>Intelligence émotionnelle</li>
+                            <li>Curiosité</li>
                         </ul> 
                     </div>
                 </div>
 
-                <div class="boite">
+                <div class="boite" id="toggSoft2">
 
-                    <div id="toggSoft2" class="boite-logo">
+                    <div  class="boite-logo">
                         <h4 class="title-dev" >Mes hobbies</h4>
                         <img class="iconeHardSkills" src="public/img/passe-temps.png" alt="Loisir icônes créées par GOWI - Flaticon">
                     </div>
-                    <p>Je possède des hobbies qui me rendent unique</p>
-
+                    <p class="p-boite">Je possède des hobbies qui me rendent unique</p>
+                    <p class="p-boite"><span>CLIQUEZ-MOI</span></p>   
                 </div>
 
                 <div id="s2" class="afficherInfos-soft" style="display: none;">
@@ -243,13 +264,13 @@
                     <div class="soft-skills-ul-container">
                         <ul class="soft-skills2">
                             
-                            <li><img class="icon-hobbie" src="public/img/une-manette.png" alt="Manette-de-jeu icônes créées par Smashicons - Flaticon">Jeux vidéo</li>
+                            <li><img class="icon-hobbie" src="public/img/une-manette.png" alt="Manette-de-jeu icônes créées par Smashicons - Flaticon">Jeux vidéos</li>
                             <li>Musique<img class="icon-hobbie" src="public/img/la-musique.png" alt="La musique icônes créées par Freepik - Flaticon"></li>
                             <li><img class="icon-hobbie" src="public/img/escalade-silhouette.png" alt="Montée icônes créées par Freepik - Flaticon">Escalade</li>
-                            <li>Randonée<img class="icon-hobbie" src="public/img/homme-en-randonnee.png" alt="Sac à dos icônes créées par Freepik - Flaticon"></li>
+                            <li>Randonnée<img class="icon-hobbie" src="public/img/homme-en-randonnee.png" alt="Sac à dos icônes créées par Freepik - Flaticon"></li>
                             <li><img class="icon-hobbie" src="public/img/la-technologie.png" alt="La technologie icônes créées par juicy_fish - Flaticon">Nouvelles technologies</li>
                             <li>Moto<img class="icon-hobbie" src="public/img/moto.png" alt="Moto icônes créées par Freepik - Flaticon"></li>
-                            <li><img class="icon-hobbie" src="public/img/festival.png" alt="Festival icônes créées par surang - Flaticon">Festivité</li>
+                            <li><img class="icon-hobbie" src="public/img/festival.png" alt="Festival icônes créées par surang - Flaticon">Festivités</li>
                             
                         </ul> 
                     </div>
@@ -262,14 +283,15 @@
 
         <section id="projet">
 
-            <h2>Projet</h2>
+            <h2>Projets</h2>
             <div class="container-projet">
 
                 <!-- projet 1  -->
                 <div id="myBtn" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
                         <img href="#myModal1" class="img-projet modal-button" src="public/img/test1.png" alt="projet site de yoga image page home">
-                        <figcaption>Projet Site Yoga PHP Symfony</figcaption>
+                        <figcaption>Site Yoga PHP Symfony</figcaption>
                     </figure>
                 </div>
 
@@ -283,14 +305,23 @@
                         <div class="modal-body">
 
                             <div class="modal-text-projet">
-                                <p>Le projet de fin d'année est un site de yoga avec un Système de réservation et un système de paiement en ligne. Durée 3 mois de travaille</p>
-                                <p>Le but est de crée un site pour une personne de ma famille pour augmenter sa visibilité et sa clientèles. Le projet n'est pas aboutit mais je continue à travailler dessus pour le finalisé</p>
-                                <p>Les fonctionnalité principale mise en place sont :</p>
-                                <p>Système de réservation / Newsletter / Blog / Vidéo séance de yoga / Livre d'or / E-commerce / page de contact.</p>
-                                <p>Le projet à été coder en Symfony PHP en Programation Orienter Objet.</p>
-                                <p>En premier lieux j'ai commencer par faire une maquette complète grâce a Figma, puis j'ai fait la modélisation de données grâce a Looping en faisant le MCD, MLD pour préparer le terrain a la construction du site.</p>
-                                <p>j'ai bien entendue travailler le référencement naturelle SEO durant tout le projet.</p>
-                                <p>La sécurité à été tout au long du procésus un point important sur lequel j'ai travailler.</p>
+                                <p>Pour mon projet de fin de formation, j'ai conçu un site web qui comprend un système de réservation et de paiement en ligne.</p>
+                                <p>L'objectif a été de créer un site pour une professeure de yoga afin d'augmenter sa visibilité et accroître sa clientèle. A ce jour, le projet n'est pas terminé mais je continue à travailler dessus pour le finaliser.</p>
+                                <p>Les fonctionnalités principales mises en place sont :</p>
+                                <ul class="siteYoga">
+                                    <li>Système de réservation</li>
+                                    <li>Newsletter</li>
+                                    <li>Blog</li>
+                                    <li>Vidéo séance de yoga</li>
+                                    <li>Livre d'or</li>
+                                    <li>E-commerce</li>
+                                    <li>Page de contact</li>
+                                </ul>
+                               
+                                <p>Le projet a été codé en Symfony PHP en Programmation Orienté Objet sous le modèle MVP.</p>
+                                <p>En premier lieu, j'ai commencé par faire le maquettage grâce a Figma, puis j'ai fait la modélisation de données grâce a Looping en faisant le MCD / MLD grâce à la méthode Mersie pour concevoir la Base De Données et aider à la création des Entités.</p>
+                                <p>J'ai bien entendu travaillé le référencement naturel SEO durant tout le projet et veillé à la sécurité tout au long de ce processus.</p>
+                                <p>Durée de développement : environ 3 mois.</p>
                             </div>
              
                             <div class="slider-modal">
@@ -299,58 +330,58 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/admin.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/admin.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/home1.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/home1.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/home2.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/home2.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/home3.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/home3.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/home4.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/home4.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/apropos.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/apropos.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce1.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce1.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce2.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce2.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce3.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce3.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce4.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce4.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce5.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce5.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/e-commerce6.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/e-commerce6.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/mesComandes.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/mesComandes.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/resa1.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/resa1.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/resa2.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/resa2.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/resa3.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/resa3.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/resa4.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/resa4.png" alt="image projet site de yoga">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet yoga/video.png" alt="image projet site de yoga">
+                                            <img src="public/img/projetYoga/video.png" alt="image projet site de yoga">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -369,9 +400,10 @@
 
                 <!-- projet 2  -->
                 <div id="myBtn2" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img class="img-projet modal-button" href="#myModal2" src="public/img/projet forum/projet forum1.png" alt="projet forum image home">
-                        <figcaption>Projet Forum PHP-POO-MVP</figcaption>
+                        <img class="img-projet modal-button" href="#myModal2" src="public/img/projetForum/projetForum1.png" alt="projet forum image home">
+                        <figcaption>Forum PHP-POO-MVP</figcaption>
                     </figure>
                 </div>
 
@@ -385,10 +417,13 @@
                         <div class="modal-body">
                           
                                 <div class="modal-text-projet">
-                                    <p>Projet réaliser en PHP7 avec un framework maison sous le modèle MVP (Modèle Vue Présentateur) avec un fonctionement de routing avec un index.php.</p>
-                                    <p>Le but ici etais de recrée un forum, j'ai décider de prendre le thème Jeux vidéo car c'est un de mes hobbies et que je connais bien le sujet.</p>
-                                    <p>Le projet a été réaliser en 2 semaines lors de ma formation en DWWM</p>
-                                    <p>Le travaille sur ce projet comprend la sécrutié, la gestion du crud, la possibilité de fermer un topic ou de bannir un utilisateur. Par la suite il y a aussi l'anonymisation qui devais être pris en comtpe.</p>
+                                    <p>Projet réalisé en PHP-7 avec un framework maison sous le modèle MVP (Modèle Vue Présentateur), grâce au système de routing via un index.php.</p>
+                                    <p>Le but ici était de recréer un forum. J'ai décidé de prendre le thème du jeu vidéo.</p>
+                                    <p>La réalisation de la modélisation de données du MCD/MLD a été faite en amont du projet.</p>
+                                    <p>Une fois inscrit sur le forum, l'utilisateur a la possibilité de créer/modifier/supprimer son topic et de répondre à celui des autres membres.</p>
+                                    <p>Un administrateur ou un modérateur peut bannir un utilisateur et fermer un topic en plus des droits utilisateurs.</p>
+                                    <p>Le travail sur ce projet comprenait également la sécurité et la gestion du CRUD ; la suppression d'un compte amène à l'anonymisation de celui-çi.</p>
+                                    <p>Durée de développement : environ 2 semaines.</p>
                                 </div>
                         
                             <div class="slider-modal">
@@ -396,19 +431,19 @@
                                 <div class="swiper mySwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet forum/projet forum1.png" alt="image projet">
+                                            <img src="public/img/projetForum/projetForum1.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet forum/forum2.png" alt="image projet">
+                                            <img src="public/img/projetForum/forum2.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet forum/forum3.png" alt="image projet">
+                                            <img src="public/img/projetForum/forum3.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet forum/forum4.png" alt="image projet">
+                                            <img src="public/img/projetForum/forum4.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet forum/forum5.png" alt="image projet">
+                                            <img src="public/img/projetForum/forum5.png" alt="image projet">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -426,9 +461,10 @@
 
                  <!-- projet 3  -->
                  <div id="myBtn3" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal3" src="public/img/projet-cinema/test.png" alt="projet cinema image home">
-                        <figcaption>Projet Cinéma PHP-POO-MVP</figcaption>
+                        <figcaption>Cinéma PHP-POO-MVP</figcaption>
                     </figure>
                 </div>
 
@@ -442,12 +478,19 @@
                         <div class="modal-body">
                           
                             <div class="modal-text-projet">
-                                <p>Projet réaliser en PHP7 avec un framework maison sous le modèle MVP ( Modèle Vue Présentateur ) avec un fonctionement de routing avec un index.php.</p>
-                                <p>Le but ici etais de recrée un site style AlloCiné </p>
-                                <p>Le projet a été réaliser en 10 jours lors de ma formation en DWWM</p>
-                                <p>Réalisation de la modélisation de données avec le MCD/MLD avant le début du projet.</p>
-                                <p>Il y a la gestion du crud ainsi que la liaison de plusieur relation entre les entités crées ce qui permet de pouvoir naviguer d'un film a son réalisateur ou aux acteurs principaux qui on tounrée sur le film.</p>
-                                <p>Il y a aussi la possibilité de pouvoir faire une recherche par nom de film, acteur, ou réalisateur via une barre de recherche.</p>
+                                <p>Projet réalisé en PHP-7 avec un framework maison sous le modèle MVP (Modèle Vue Présentateur), grâce au système de routing via un index.php.</p>
+                                <p>Le but ici était de recréer un site dans l'esprit d'AlloCiné.</p>
+                                <p>La réalisation de la modélisation de données du MCD/MLD a été faite en amont du projet.</p>
+                                <p>Le projet comprend la gestion du CRUD ainsi que la liaison de plusieurs relations entre les entités créées, ce qui permet de pouvoir naviguer entre le film, son réalisateur et ses acteurs principaux.</p>
+                                <p>Il amène aussi la possibilité de faire une recherche par nom de film, d'acteur ou de réalisateur via une barre de recherche.</p>
+                                <p>Le site permet d'ajouter/modifier/suppimer les catégories suivantes : </p>
+                                <ul class="siteYoga">
+                                    <li>Film</li>
+                                    <li>Réalisteur</li>
+                                    <li>Acteurs</li>
+                                    <li>Catégories</li>
+                                </ul>
+                                <p>Durée de développement : environ 2 semaines.</p>
                             </div>
                         
                             <div class="slider-modal">
@@ -493,9 +536,10 @@
 
                  <!-- projet 4  -->
                  <div id="myBtn4" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img class="img-projet modal-button" href="#myModal4" src="public/img/projet bootstrap/bootstrap2.png" alt="projet bootstrap image">
-                        <figcaption>Projet Bootstrap</figcaption>
+                        <img class="img-projet modal-button" href="#myModal4" src="public/img/projetBootstrap/bootstrap2.png" alt="projet bootstrap image">
+                        <figcaption>Bootstrap</figcaption>
                     </figure>
                 </div>
 
@@ -508,9 +552,11 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-text-projet">
-                                <p>Projet réaliser seulement avec le framework bootsrap et avec CSS3</p>
-                                <p>Le projet consiste a récréée un site de reservation type Rbnb</p>
-                                <p>La réalistaiton est construite par rapport a une maquette donnée.</p>
+                                <p>Projet réalisé uniquement avec le framework bootsrap et avec CSS3.</p>
+                                <p>Ce projet consiste à récréér un site de réservation type Airbnb.</p>
+                                <p>La réalisation a été construite sur la base d'une maquette prédéfinie.</p>
+                                <p>Le but ici était de prendre en main le framework et de toute ces possibilités.</p>
+                                <p>Durée de développement : environ 2 jours.</p>
                             </div>
                         
                             <div class="slider-modal">
@@ -520,22 +566,22 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap1.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap1.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap2.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap2.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap3.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap3.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap4.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap4.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap5.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap5.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet bootstrap/bootstrap6.png" alt="image projet">
+                                            <img src="public/img/projetBootstrap/bootstrap6.png" alt="image projet">
                                         </div>
                                 
                                     </div>
@@ -555,9 +601,10 @@
                 </div>
                  <!-- projet 5  -->
                   <div id="myBtn5" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img class="img-projet modal-button" href="#myModal5" src="public/img/projet vibes/Vibes1.png" alt="projet vibes image home">
-                        <figcaption>Projet Vibes</figcaption>
+                        <img class="img-projet modal-button" href="#myModal5" src="public/img/projetVibes/Vibes1.png" alt="projet vibes image home">
+                        <figcaption>Vibes</figcaption>
                     </figure>
                 </div>
 
@@ -570,8 +617,10 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-text-projet">
-                                <p>Projet de One page en Front-end reproduit selon une maquette donnée à recrée.</p>
-                                <p>Le but etant de faire du référencement natuerel SEO à la création du projet. Le travaille des média query à été éffectuer sur 3 versions Desktop / Tablette / Mobile.</p>
+                                <p>Projet de One page en Front-end reproduit selon une maquette prédéfinie à recréer.</p>
+                                <p>Le but était de travailler les médias query et de gérer le référencement naturel SEO pendant la réalisation du projet.</p> 
+                                <p>Le travail des média query a été décliné sur trois versions : Desktop / Tablette / Mobile.</p>
+                                <p>Durée de développement : environ 5 jours.</p>
                             </div>
                         
                             <div class="slider-modal">
@@ -581,13 +630,13 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet vibes/Vibes1.png" alt="image projet">
+                                            <img src="public/img/projetVibes/Vibes1.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet vibes/Vibes2.png" alt="image projet">
+                                            <img src="public/img/projetVibes/Vibes2.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet vibes/Vibes3.png" alt="image projet">
+                                            <img src="public/img/projetVibes/Vibes3.png" alt="image projet">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -606,8 +655,9 @@
                 </div>
                  <!-- projet 6  -->
                  <div id="myBtn6" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img class="img-projet modal-button" href="#myModal6" src="public/img/Api projet/apibiere.png" alt="Api image">
+                        <img class="img-projet modal-button" href="#myModal6" src="public/img/ApiProjet/apibiere.png" alt="Api image">
                         <figcaption>Utilisation d'Api</figcaption>
                     </figure>
                 </div>
@@ -617,14 +667,15 @@
                     <div class="modal-content">
                         <div class="modal-header">
                         <span class="close">×</span>
-                        <h2>Projet Api</h2>
+                        <h2>Projet API</h2>
                         </div>
                         <div class="modal-body">
                             <div class="modal-text-projet">
-                                <p>Ici je vous présente 3 petits projet visant a utilisé des Api</p>
-                                <p>Le premier projet est une Api sur des marques de bières, que l'on peut choisir selon leur taux d'alcool ou de leur maturation ( Blonde / Brune / blanche / Rousse ). Ou par nom dans la barre de recherche.</p>
-                                <p>La deuxième API est une api sur les personnage de star Wars ou l'on peut selectionnée un personnage pour recueillir dviers informations sur ceux-çi</p>
-                                <p>La troisième API est une api sur les Super héros le principe est quasi le même que pour l'api Star Wars.</p>
+                                <p>Ici je vous présente trois petits projets visant à utiliser des API.</p>
+                                <p>L'intéret ici est de travailler la méthode fetch synchrone et asynchrone, ainsi que la manière de manipuler les objets recueillis.</p>
+                                <p>Le premier projet est une API sur des marques de bières, que l'on peut choisir selon leur taux d'alcool, leur échelle de couleur ( blonde / brune / blanche / rousse ) ou par nom via une barre de recherche.</p>
+                                <p>La deuxième API concerne les personnages de Star Wars ou l'on peut selectionner un personnage pour recueillir diverses informations les concernant.</p>
+                                <p>La troisième API reprend le même principe mais pour les Super Héros.</p>
                             </div>
                         
                             <div class="slider-modal">
@@ -634,13 +685,13 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/Api projet/apibiere.png" alt="image projet">
+                                            <img src="public/img/ApiProjet/apibiere.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Api projet/apiStarWars.png" alt="image projet">
+                                            <img src="public/img/ApiProjet/apiStarWars.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Api projet/ApiHeros.png" alt="image projet">
+                                            <img src="public/img/ApiProjet/ApiHeros.png" alt="image projet">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -660,9 +711,10 @@
                 </div>
                  <!-- projet 7  -->
                  <div id="myBtn7" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img class="img-projet modal-button" href="#myModal7" src="public/img/projet Carte Bonjour Alsace/CBA.png" alt="Image du site La carte Bonjour Alsace">
-                        <figcaption>Projet En Wordpresse etffecuer pendant le Stage.</figcaption>
+                        <img class="img-projet modal-button" href="#myModal7" src="public/img/projetCarteBonjourAlsace/CBA.png" alt="Image du site La carte Bonjour Alsace">
+                        <figcaption>Wordpress</figcaption>
                     </figure>
                 </div>
 
@@ -671,14 +723,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                         <span class="close">×</span>
-                        <h2>Projet En WordPress Carte Bonjour ALsace</h2>
+                        <h2>Projet en WordPress - Carte Bonjour-Alsace</h2>
                         </div>
                         <div class="modal-body">
                             <div class="modal-text-projet">
-                                <p>Projet réaliser seul durant le stage effecuter durant la formation.</p>
-                                <p>Le but étais de crée un site pour que les proffesionels puissent réserver un encart sur le dépliant produit par Bonjour-alsace.</p>
-                                <p>Intégration de plugin Wordpress en PHP plus utilisation du thème DIVI. J'ai aussi intégrer le CRM Selssy.</p>
-                                <p class="lien-BJA"><a href="https://www.bonjour.alsace/">Le site de bonjour alsace. www.bonjour.alsace</a></p>
+                                <p>Projet réalisé en autonomie durant mon stage de formation.</p>
+                                <p>Le but était de créer un site pour que les professionnels puissent réserver un encart sur le dépliant édité par la société Bonjour-alsace.</p>
+                                <p>Pour la conception, une maquette avec des directives précises à respecter m'a été donnée.</p>
+                                <p>Le WordPress a été réalisé grâce au thème DIVI, en y intégrant un plugin créé en PHP, ainsi que différents plugin et le CRM Selssy.</p>
+                                <p>J'y ai ajouté des fonctionnalités en JavaScript et de CSS pour compléter celles proposées par le thème DIVI.</p>
+                                <p class="lien-BJA"><a href="https://www.bonjour.alsace/">Site de Bonjour Alsace</a></p>
+                                <p>Durée de développement : environ 2 semaines.</p>
                             </div>
                         
                             <div class="slider-modal">
@@ -688,28 +743,28 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA1.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA1.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA2.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA2.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA3.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA3.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA4.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA4.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA5.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA5.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA6.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA6.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA7.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA7.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/projet Carte Bonjour Alsace/CBA8.png" alt="image projet de La carte Bonjour Alsace">
+                                            <img src="public/img/projetCarteBonjourAlsace/CBA8.png" alt="image projet de La carte Bonjour Alsace">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -727,11 +782,12 @@
 
                 </div>
                 
-                 <!-- projet 8  -->
-                 <div id="myBtn8" class="projet-card">
+                <!-- projet 8  -->
+                <div id="myBtn8" class="projet-card">
+                    <h4 class="voirProjet"><span>Voir projet</span> </h4> 
                     <figure>
-                        <img href="#myModal8" class="img-projet modal-button"  src="public/img/Projet formation/formation5.png" alt="projet formation image">
-                        <figcaption>Projet Formation en Symfony</figcaption>
+                        <img href="#myModal8" class="img-projet modal-button"  src="public/img/ProjetFormation/formation5.png" alt="projet formation image">
+                        <figcaption>Formation en Symfony</figcaption>
                     </figure>
                 </div>
 
@@ -755,34 +811,34 @@
                                     <div class="swiper-wrapper">
 
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation1.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation1.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation2.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation2.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation3.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation3.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation4.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation4.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation5.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation5.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation6.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation6.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation7.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation7.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation8.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation8.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation9.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation9.png" alt="image projet">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="public/img/Projet formation/formation10.png" alt="image projet">
+                                            <img src="public/img/ProjetFormation/formation10.png" alt="image projet">
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -812,10 +868,15 @@
 
                 <div class="container-aPropos">
                     <div class="textApropos1">
-                        <p style="margin-bottom:5px;">Anciennement paysagiste j'ai décidé de me reconvertire profesionellement, je me suis lancé dans le monde du développement web qui m'avais toujour attirer depuis mon enfance.</p>
-                        <p style="margin-bottom:5px;">C'est en commencant ma formation Chez Élan que j'ai compris que j'avais fait le bon choix dans ma réorientation, je me suis sentie transformer, ma soif de connaissance 
-                            et d'apprentissage à été comblé.</p>
-                        <p>tout les matins je me lève en sachant que je vais faire ce que j'aime et qui me passionne aujourd'hui. 
+                        <p class="paragraphetap">
+                            Ancien paysagiste, j'ai décidé d'une reconversion professionnelle en 2021. Je me suis lancé dans le monde du développement web pour lequel j'avais 
+                            une réelle attirance depuis mon enfance.
+                        </p>
+                        <p class="paragraphetap">
+                            En commençant ma formation au sein de l'organisme Élan à COLMAR, je me suis découvert une nouvelle passion. L'univers du numérique est venue abreuver ma soif de connaissances, j'ai alors compris que j'avais fait le bon choix dans ma réorientation.
+                        </p>
+                        <p>
+                            Depuis, je me lève tous les matins avec la motivation de pouvoir vivre de ma passion et faire de mes journées ce que j'aime : <span>coder, apprendre et développer des sites Web</span>.
                         </p>
                     </div>
       
@@ -828,12 +889,18 @@
                     </div>
     
                     <div class="textApropos2">
-                        <p style="margin-bottom:5px;">Détenteur d'un diplôme <span><strong>DWWM</strong></span>, développement web et web mobile à Élan formation a colmar j'ai pus apprendre l'algrorytmie dans son ensemble.
-                        J'ai essentiellement coder en <strong>POO</strong> (programation orioentée Objet ) tout au long de la formation.</p>
-                        <p>Je suis aujourd'hui motivé a poursuivre mes études et suis <span><strong> à la recherche d'une alternance en concepteur développeur d'application BAC+3</strong></span>,
-                        et suis donc a la recherche de l'entreprise qui saurat me faire évoluer et avec qui je pourrais partager mes connaissance et ma passion lors de projet web.</p>
-                    </div>
+                        <p class="paragraphetap">
+                            Détenteur d'un diplôme <span><strong>DWWM - Développement Web et Web Mobile</strong></span>, j'ai pu apprendre
+                             l'algrorytmie dans son ensemble ainsi que différents langages et tecnhiques de dévelopement, allant du maquettage 
+                             à la modélisation de données, jusqu'à la conception d'un site web dans son intégralité (front et back-end).
+                            Je code en <strong>POO</strong> - Programmation Orientée Objet sous le modèle <strong>MVP / MVC</strong> architecture logicielle permettant d'organiser le code.
+                        </p>
+                        <p>
+                            Aujourd'hui, je suis motivé à poursuivre mes études et monter en compétence par la voie d'une <span><strong> alternance en Concepteur
+                                 Développeur d'Applications BAC+3</strong></span>. Je suis donc à la recherche d'une entreprise qui saura me faire confiance pour partager avec elle ma passion autour de projets web et me permettre d'évoluer.
+                        </p>
 
+                    </div>
                 </div>
 
         </section>
@@ -843,7 +910,7 @@
             <h2>Contactez-moi !</h2>
             <div class="container-contact">
                 <p><img class="img-mail" src="public/img/e-mail.png" alt="Email icônes créées par Smashicons - Flaticon"> <a href="mailto:lucarellitim@hotmail.fr" class="mail">lucarellitim@hotmail.fr </a></p>
-                <p class="tel"><img class="img-tel" src="public/img/telephone-portable.png" alt="Téléphone icônes créées par Alfredo Hernandez - Flaticon"> Tel : 0636539371</p>
+                <p class="tel"><img class="img-tel" src="public/img/telephone-portable.png" alt="Téléphone icônes créées par Alfredo Hernandez - Flaticon"> 06 36 53 93 71</p>
             </div>
             <h3 class="title-footer">Réseaux</h3>
             <div class="resaux">
@@ -869,8 +936,8 @@
 
             <h3 class="title-footer">Navigation</h3> 
 
-                <a class="nav-footer" href="#aPropos">A propos</a>
-                <a class="nav-footer" href="#projet">Projet</a>
+                <a class="nav-footer" href="#aPropos">À propos</a>
+                <a class="nav-footer" href="#projet">Projets</a>
                 <a class="nav-footer" href="#contact">Contact</a>
 
             <p class="copyright">&copy; 2023 - Portfolio Timothée LUCARELLI. All Rights Reserved. </p>

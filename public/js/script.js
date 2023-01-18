@@ -44,14 +44,19 @@ const toggSoft2 =document.getElementById("toggSoft2");
 const s1 = document.getElementById("s1");
 const s2 = document.getElementById("s2");
 
-addEventListener("resize", (event) => {
-  d1.style.display = "none";
-  d2.style.display = "none";
-  d3.style.display = "none";
-  d4.style.display = "none";
-  s1.style.display = "none";
-  s2.style.display = "none";
-});
+if (window.matchMedia("(max-width: 576px)").matches) {
+
+}else{
+  addEventListener("resize", (event) => {
+    d1.style.display = "none";
+    d2.style.display = "none";
+    d3.style.display = "none";
+    d4.style.display = "none";
+    s1.style.display = "none";
+    s2.style.display = "none";
+  });
+  
+}
 
 togg1.addEventListener("click", () => {
 
