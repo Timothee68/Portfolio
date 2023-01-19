@@ -1,2 +1,0 @@
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.portfolio-lucarelli-timothee.fr/$1 [R,L]
