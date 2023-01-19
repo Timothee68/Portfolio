@@ -459,46 +459,42 @@ display: none;
     width: 100%;
     color: white;
     background-color:rgb(31,39,47);
-    padding: 20px;
-}
-
-.resaux{
-    width: 100%;
+    padding: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.mail{
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    margin: auto;
-    font-size: 30px;
-}
+.img-contact{
+    display: flex;
+    flex-direction: column;
+} 
 
-.img-mail{
-    display: none;
+.text-contact {
+    text-align: left;
 }
 
 .img-tel{
-    display: none;
-}
+    width: 50px;
+    margin: 20px;
 
-.title-resaux{
-    font-size: 60px;
 }
 
 .tel{
-    font-size: 30px;
-    margin: 50px 50px;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
-.social-querry{
-    display: flex !important;
-    width: 100%;
-    justify-content: space-around;
+.tel a{
+    font-size: 30px;
+}
+.resaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 .imglinkedin-contact{
@@ -507,6 +503,7 @@ display: none;
     border-radius: 20px;
 }
 
+
 .imgGit-contact{
     width: 100px;
     box-shadow:   0 0 54px rgba(0,189,149,1); 
@@ -514,6 +511,11 @@ display: none;
     border-radius: 20px;
 }
 
+.social-querry{
+    display: flex !important;
+    width: 100%;
+    justify-content: space-around;
+}
 /*  fin contact */
 
 

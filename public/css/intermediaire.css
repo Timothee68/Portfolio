@@ -468,41 +468,42 @@ a{
     width: 100%;
     color: white;
     background-color:rgb(31,39,47);
-    padding: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+.img-contact{
+    display: flex;
+    flex-direction: column;
+} 
+
+.text-contact {
+    text-align: left;
+}
+
+.img-tel{
+    width: 50px;
+    margin: 20px;
+
+}
+
+.tel{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tel a{
+    font-size: 30px;
+}
 .resaux{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-}
-
-.mail{
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    margin: auto;
-    font-size: 30px;
-}
-
-.img-mail{
-    width: 40px;
-    margin-right: 40px;
-}
-
-.img-tel{
-    width: 50px;
-    margin-right: 40px;
-}
-
-.title-resaux{
-    font-size: 60px;
-}
-
-.tel{
-    font-size: 30px;
-    margin: 50px 50px;
 }
 
 .imglinkedin-contact{
@@ -518,7 +519,6 @@ a{
     background-color: white;
     border-radius: 20px;
 }
-
 /*  fin contact */
 
 

@@ -296,7 +296,7 @@ a:hover, a:focus{
 }
 
 .boite:hover{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 25px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
 }
 
@@ -513,39 +513,41 @@ a:hover, a:focus{
     color: white;
     background-color:rgb(31,39,47);
     padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+.img-contact{
+    display: flex;
+    flex-direction: column;
+} 
+
+.text-contact {
+    text-align: left;
+}
+
+.img-tel{
+    width: 50px;
+    margin: 20px;
+
+}
+
+.tel{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.tel a{
+    font-size: 30px;
+}
 .resaux{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-}
-
-.mail{
-    text-align: center;
-    color: white;
-    margin: auto;
-    font-size: 30px;
-}
-
-.img-mail{
-    width: 40px;
-    margin-right: 40px;
-}
-
-.img-tel{
-    width: 50px;
-    margin-right: 40px;
-}
-
-.title-resaux{
-    font-size: 60px;
-}
-
-.tel{
-    font-size: 30px;
-    margin-top: 50px ;
 }
 
 .imglinkedin-contact{
