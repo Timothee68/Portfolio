@@ -21,7 +21,7 @@ h2{
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
     padding: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     color: white;
     font-weight:900;
 }
@@ -243,7 +243,7 @@ figcaption{
 /* hard skills */
 
 .title-hard-skills{
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: black;
     color: white;
 }
@@ -274,7 +274,7 @@ figcaption{
 
 .title-dev{
     width: 90%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
@@ -322,10 +322,13 @@ figcaption{
 
 .hard-skills-ul-container p{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     color:rgb(0,189,149);
     
+}
+.title-skills{
+    font-size: 1.6em;
 }
 
 .photo-decoratif{
@@ -477,12 +480,12 @@ display: none;
 
 .tel{
     padding: 22px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .tel a{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .resaux{
@@ -519,7 +522,7 @@ display: none;
 .title-footer{
     text-align: center;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2.2em;
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1); 
