@@ -1,2 +1,14 @@
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 years"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/javascript "access 1 month"
+    ExpiresByType text/x-javascript "access 1 month"
+    ExpiresByType application/javascript "access 1 month"
+    ExpiresByType application/x-javascript "access 1 month"
+    ExpiresByType application/json "access 1 month" 
+</IfModule>
+
+
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.portfolio-lucarelli-timothee.fr/$1 [R,L]
