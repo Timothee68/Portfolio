@@ -7,6 +7,7 @@
 /* Général */
 
 body{
+    width: 100%;
     font-family: 'Space Grotesk', sans-serif;
     background-color: rgb(0, 0, 0);
 }
@@ -62,12 +63,20 @@ figcaption{
 /* fin général */
 
 /* header */
+.topnav{
+    width: 100%;
+}
+
+.topnav #myLinks {
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .nav-bar{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 20px 40px;
     background-color: rgb(0,189,149);
     color: white;
@@ -76,23 +85,46 @@ figcaption{
 a{
     width: 100%;
     text-decoration: none;
-    color: rgb(0, 0, 0);
     font-size: 1.4em;
     color: white;
     font-weight: 900;  
+    position: relative;
 }
 
-a:hover, a:focus{
-    text-decoration: underline;
-    text-underline-offset: 12px;
+.lien::after{
+    content: '';
+    height: 2px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.lien:hover::after{
+    width: 100%;
+    left: 0;
 }
 
 .lien{
+    margin: auto;
+    width: max-content;
     text-align: center;
 }
 
 .resauxSocial{
+    width: 5%;
+}
+
+.resauxSocial2{
     width: 20%;
+}
+
+.logo{
+    width: 20%;
+    margin-right: -130px;
 }
 
 .imglinkedin{
@@ -107,8 +139,8 @@ a:hover, a:focus{
 
 .imgLogo{ 
     background-color:  rgb(0,189,149); 
-    margin-right: 40px;
     width: 40px;
+
 }
 
 /*  fin header */

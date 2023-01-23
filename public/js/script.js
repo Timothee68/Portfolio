@@ -202,3 +202,19 @@ window.onclick = function(event) {
      }
     }
 }
+
+
+document.querySelector( '.burger' ).addEventListener( 'click', function ( e ) {
+  let x = document.getElementById("myLinks");
+  e.preventDefault;
+  this.className = this.className === 'burger' ? 'burger on' : 'burger';
+  
+  if ( this.className === 'burger on'){
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    }
+    } else {
+      x.style.display = "none";
+    }
+});
+

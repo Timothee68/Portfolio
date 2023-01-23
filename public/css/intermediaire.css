@@ -60,6 +60,13 @@ figcaption{
 /* fin général */
 
 /* header */
+.topnav{
+    width: 100%;
+}
+
+.topnav #myLinks {
+    display: flex ;
+}
 
 .nav-bar{
     width: 100%;
@@ -74,13 +81,46 @@ figcaption{
 a{
     width: 100%;
     text-decoration: none;
-    color: black;
     font-size: 1.4em;
     color: white;
+    font-weight: 900;  
+    position: relative;
 }
 
-.resauxSocial{
+.lien::after{
+    content: '';
+    height: 2px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.lien:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.lien{
+    margin: auto;
+    width: max-content;
+    text-align: center;
+}
+
+.resauxSocial {
+    width: 5%;
+}
+
+.resauxSocial2{
     width: 20%;
+}
+
+.logo{
+    width: 20%;
+    margin-right: -130px;
 }
 
 .imglinkedin{
@@ -130,7 +170,6 @@ a{
     width: 450px;
     margin-left: 3%;
     margin-top: -60px;
-
 }
 
 .text-presentation{

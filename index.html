@@ -8,10 +8,10 @@
     <meta name="title" content="Portfolio de timothée lucarelli Développeur web junior en back-end et front-end">
     <meta name="description" content="Portfolio de Timothée Lucarelli Développeur web junior, plusieurs projets sont présentés, ainsi que mes différentes compétences acquises.">
     <!-- linkedin -->
-    <meta property="og:type" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <meta property="og:type" content="Linkedin de timothée lucarelli développeur web junior">
     <meta property="og:url" content="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/">
-    <meta property="og:title" content="Linkedin de timothée lucarelli dévellopeur web junior">
-    <meta property="og:description" content="Linkedin de timothée lucarelli dévellopeur web junior">
+    <meta property="og:title" content="Linkedin de timothée lucarelli développeur web junior">
+    <meta property="og:description" content="Linkedin de timothée lucarelli développeur web junior">
     <meta property="og:image" content="https://www.portfolio-lucarelli-timothee.fr/public/img/photo-perso-removebg-preview.png">
 
     <link rel="stylesheet" href="public/css/style.css">
@@ -29,22 +29,32 @@
     <header>
 
             <nav class="nav-bar">
-    
-                <figure class="resauxSocial">
-                   <img class="imgLogo" src="public/img/monogram-logo-letter-t-l-260nw-1-removebg-preview.png" alt="Linkedin icônes créées par riajulislam - Flaticon">
+                <figure class="resauxSocial logo">
+                    <img class="imgLogo" src="public/img/monogram-logo-letter-t-l-260nw-1-removebg-preview.png" alt="Linkedin icônes créées par riajulislam - Flaticon">
                 </figure>
-                <a class="lien" href="#aPropos">À propos</a>
-                <a class="lien" href="#projet">Projets</a>
-                <a class="lien" href="#contact">Contact</a>
-    
-                <figure class="resauxSocial">
-                    <a href="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/" title="linkedin icônes"><img class="imglinkedin" src="public/img/linkedin.png" alt="Linkedin icônes créées par riajulislam - Flaticon"></a>
-                </figure>
-    
-                <figure class="resauxSocial">
-                    <a href="https://github.com/Timothee68" title="git icônes"><img class="imgGit" src="public/img/logo-git.png" alt="Linkedin icônes créées par riajulislam - Flaticon"></a>
-                </figure>
-    
+                <div class="topnav">               
+                    <div id="myLinks">
+                        <a class="lien" href="#aPropos">À propos</a>
+                        <a class="lien" href="#projet">Projets</a>
+                        <a class="lien" href="#contact">Contact</a>
+            
+                        <figure class="resauxSocial">
+                            <a href="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/" title="linkedin icônes"><img class="imglinkedin" src="public/img/linkedin.png" alt="Linkedin icônes créées par riajulislam - Flaticon"></a>
+                        </figure>
+            
+                        <figure class="resauxSocial">
+                            <a href="https://github.com/Timothee68" title="git icônes"><img class="imgGit" src="public/img/logo-git.png" alt="Linkedin icônes créées par riajulislam - Flaticon"></a>
+                        </figure>
+                    </div>
+                </div>    
+                    <div href="#mylinks" class="burger">
+                        <div class="bar bun-top"></div>
+                        <div class="bar lettuce"></div>
+                        <div class="bar mustard"></div>
+                        <div class="bar ketchup"></div>
+                        <div class="bar patty"></div>
+                        <div class="bar bun-bot"></div>
+                    </div>
             </nav>
             
     </header>
@@ -64,7 +74,7 @@
                 <div class="text-presentation">
                     <p>Hello , <span>Je m'appelle</span></p>
                     <h4>Timothée Lucarelli</h4>
-                    <button class="btn1"><a href="#aPropos">À propos</a></button>
+                    <button class="btn1"><a class="lien" href="#aPropos">À propos</a></button>
                 </div>
             </div> 
     
@@ -924,14 +934,14 @@
             </div>
             <h3 class="title-hard-skills">Réseaux</h3>
             <div class="resaux">
-                <figure class="resauxSocial social-querry">
+                <figure class="resauxSocial2 social-querry">
                     <p>
                         <a href="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/" title="linkedin icônes">
                             <img class="imglinkedin-contact" src="public/img/linkedin.png" alt="Linkedin icônes créées par riajulislam - Flaticon">
                         </a>
                     </p>
                 </figure>
-                <figure class="resauxSocial social-querry">
+                <figure class="resauxSocial2 social-querry">
                     <p>
                         <a href="https://github.com/Timothee68" title="git icônes">
                             <img class="imgGit-contact" src="public/img/logo-git.png" alt="Linkedin icônes créées par riajulislam - Flaticon">
@@ -946,9 +956,9 @@
 
             <h3 class="title-footer">Navigation</h3> 
 
-                <a class="nav-footer" href="#aPropos">À propos</a>
-                <a class="nav-footer" href="#projet">Projets</a>
-                <a class="nav-footer" href="#contact">Contact</a>
+                <a class="nav-footer lien" href="#aPropos">À propos</a>
+                <a class="nav-footer lien" href="#projet">Projets</a>
+                <a class="nav-footer lien" href="#contact">Contact</a>
 
             <p class="copyright">&copy; 2023 - Portfolio Timothée LUCARELLI. All Rights Reserved. </p>
 
@@ -975,8 +985,8 @@
         sr.reveal('.hexagone', {origin: 'left', distance: "200px",reset: true })
         sr.reveal('.boxshadow', {origin: 'left', distance: "200px",reset: true })
         sr.reveal('.photoPerso', {origin: 'top', distance: "250px",reset: true })
-        sr.reveal('.textApropos1', {origin: 'left', distance: "250px"})
-        sr.reveal('.textApropos2', {origin: 'right', distance: "250px"})
+        sr.reveal('.textApropos1', {origin: 'bottom', distance: "250px"})
+        sr.reveal('.textApropos2', {origin: 'bottom', distance: "250px"})
         sr.reveal('.imglinkedin-contact', {origin: 'left',reset: true})
         sr.reveal('.imgGit-contact', {origin: 'right',reset: true})
         
@@ -1003,7 +1013,6 @@
            },
          });
        </script>
-
     <script type="application/ld+json">
         {
         "@context": "http://schema.org",
