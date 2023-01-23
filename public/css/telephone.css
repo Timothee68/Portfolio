@@ -531,6 +531,9 @@ footer{
     margin: 10px;
 }
 
+footer p{
+    font-size: 15px;
+}
 .copyright{
     margin-top: 40px;
     font-size: 15px;
