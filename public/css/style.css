@@ -86,7 +86,7 @@ a{
     width: 100%;
     text-decoration: none;
     font-size: 1.4em;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 900;  
     position: relative;
 }
@@ -94,7 +94,7 @@ a{
 .lien::after{
     content: '';
     height: 2px;
-    background-color: white;
+    background: rgb(255,253,253);
     width: 0;
     position: absolute;
     bottom: -5px;
@@ -160,11 +160,6 @@ a{
 
 }
 
-/* .container-aPropos{
-    display: flex;
-    flex-direction: column;
-} */
-
 .boxshadow {
     filter: drop-shadow(0 0 0.75rem rgb(202, 238, 188));
 }
@@ -191,7 +186,8 @@ a{
     color: white;
 }
 
-.text-presentation h4{
+.text-presentation h2{
+    background-color: rgb(31,39,47);
     font-size: 4rem;
     color: rgb(0,189,149);
 }
@@ -328,14 +324,11 @@ a{
 
 .title-dev{
     width: 90%;
+    color: white;
     font-size: 1.6rem;
+    font-weight:900;
     margin-bottom: 15px;
-}
-
-.title-dev:hover{
-    color:  rgba(0,189,149);
-    text-shadow: 0 0 14px rgb(243, 243, 243);
-    cursor: pointer;
+    text-align: left;
 }
 
 .boite-logo{
@@ -433,13 +426,6 @@ a{
     margin-bottom: 20px;
 }
 
-.soft-skills-ul-container li:hover{
-    color: rgba(24,206,136,1);
-    filter: drop-shadow(0 0 0.75rem rgb(217, 241, 207));
-    font-size: 110%;
-    cursor:default;
-}
-
 .icon-hobbie{
     width: 50px;
     margin-right: 60px;
@@ -500,10 +486,14 @@ a{
     max-width: 252px;
     border-radius: 8px;
 }
+
 .voirProjet{
     color: white;
     text-align: center;
     padding: 5px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: 900;
 }
 
 .siteYoga{
@@ -589,17 +579,20 @@ a{
 /* footer */
 
 .title-footer{
+    width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 3em;
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1);
+    background-color: rgb(31,39,47);
+    margin-bottom: 20px;
 }
 
 footer{
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: rgb(31,39,47);
     color: white;
     text-align: center;
@@ -762,7 +755,6 @@ footer{
     background-color: rgb(255, 255, 255) !important;
     opacity: initial !important;
     margin-top: 10px !important;
-
 }
 
 .swiper-pagination-bullet-active{

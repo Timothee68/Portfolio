@@ -203,9 +203,12 @@ margin-top: 100px;
     color: white;
 }
 
-.text-presentation h4{
+.text-presentation h2{
+    width: 100%;
+    background-color: rgb(31,39,47);
     font-size: 2rem;
     color: rgb(0,189,149);
+    padding: 0;
 }
 
 .text-presentation p , .text-presentation span{
@@ -327,15 +330,12 @@ margin-top: 100px;
 }
 
 .title-dev{
-    width: 90%;
+    width: 100%;
     font-size: 1.4rem;
     margin-bottom: 15px;
-}
-
-.title-dev:hover{
-    color:  rgba(0,189,149);
-    text-shadow: 0 0 14px rgb(243, 243, 243);
-    cursor: pointer;
+    font-weight:900;
+    text-align: center;
+    color: white;
 }
 
 .boite-logo{
@@ -417,13 +417,6 @@ display: none;
     margin-bottom: 20px;
     width: 100% !important;
     text-align: center !important;
-}
-
-.soft-skills-ul-container li:hover{
-    color: rgba(24,206,136,1);
-    filter: drop-shadow(0 0 0.75rem rgb(217, 241, 207));
-    font-size: 110%;
-    cursor:default;
 }
 
 .icon-hobbie{
@@ -561,12 +554,15 @@ display: none;
 /* footer */
 
 .title-footer{
+    width: 100%;
     text-align: center;
     padding: 20px;
     font-size: 2.2em;
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1);
+    background-color: rgb(31,39,47);
+    margin-bottom: 20px;
 }
 
 footer{

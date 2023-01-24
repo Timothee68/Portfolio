@@ -204,13 +204,17 @@ window.onclick = function(event) {
 }
 
 
+// menu burger
+
 document.querySelector( '.burger' ).addEventListener( 'click', function ( e ) {
   let x = document.getElementById("myLinks");
   e.preventDefault;
   this.className = this.className === 'burger' ? 'burger on' : 'burger';
-  
+
   if ( this.className === 'burger on'){
+    x.style.display = "block" ;
     if (x.style.display === "none") {
+      console.log(this.className);
       x.style.display = "block";
     }
     } else {
@@ -218,3 +222,21 @@ document.querySelector( '.burger' ).addEventListener( 'click', function ( e ) {
     }
 });
 
+window.addEventListener('resize', () =>{
+  if (window.matchMedia("(min-width: 920px)").matches) {
+    let x = document.getElementById("myLinks");
+    x.style.display = "flex";
+  }else if(window.matchMedia("(max-width: 920px)").matches){
+
+    let x = document.getElementById("myLinks");
+    let e = document.querySelector(".burger");
+
+    if ( e.className === 'burger on'){
+      x.style.display = "block" ;
+    }
+    if ( e.className === 'burger'){
+      x.style.display = "none" ;
+    }  
+  
+  }
+});
