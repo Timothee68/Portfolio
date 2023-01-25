@@ -73,8 +73,7 @@ togg1.addEventListener("click", () => {
       } else {
         d1.style.display = "flex";
         d2.style.display = "none";
-        d3.style.display = "none";
-        d4.style.display = "none";
+      
       }
   }
 })
@@ -94,8 +93,7 @@ togg2.addEventListener("click", () => {
         } else {
             d2.style.display = "flex";
             d1.style.display = "none";
-            d3.style.display = "none";
-            d4.style.display = "none";
+         
         }
     }
   })
@@ -112,8 +110,6 @@ togg2.addEventListener("click", () => {
 
         } else {
             d3.style.display = "flex";
-            d1.style.display = "none";
-            d2.style.display = "none";
             d4.style.display = "none";
         }
     }
@@ -126,12 +122,9 @@ togg2.addEventListener("click", () => {
         if (window.matchMedia("(max-width: 920px)").matches) {
 
           d4.style.display = "contents";
-
         } else {
             d4.style.display = "flex";
-            d1.style.display = "none";
             d3.style.display = "none";
-            d2.style.display = "none";
         }
     }
   })

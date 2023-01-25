@@ -60,6 +60,15 @@ figcaption{
 /* fin général */
 
 /* header */
+header{
+    background-color: rgb(0,189,149);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: 200;
+}
 .topnav{
     width: 100%;
 }
@@ -69,7 +78,7 @@ figcaption{
 }
 
 .nav-bar{
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -148,7 +157,7 @@ a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     margin: 0;
     padding: 0;
 
@@ -181,8 +190,8 @@ a{
 }
 
 .text-presentation h2{
-    background-color: rgb(31,39,47);
-    font-size: 4rem;
+    background-color: rgb(31,39,47,0);
+    font-size: 2.5rem;
     color: rgb(0,189,149);
     padding: 0;
 }
@@ -193,7 +202,7 @@ a{
 
 .btn1{
     margin-top: 40px;
-    width: 40%;
+    width: auto;
     padding: 10px;
     background: rgb(24,206,136);
     background: linear-gradient(90deg, rgba(24,206,136,1) 20%, rgba(0,189,149,1) 85%);
@@ -221,7 +230,7 @@ a{
 
 
 #aPropos{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-aPropos{
@@ -293,14 +302,14 @@ a{
     width: 100%;
     height: max-content;
     position: relative;
-    padding: 50px;
-    background-color: rgb(31,39,47);
+    padding: 20px;
+    background-color: rgb(31,39,47,0.4);
 }
 
 .boite{
-    width: 50%;
-    margin: 48px 8px 8px 8px;
-    padding: 40px;
+    width: 35%;
+    margin: 20px 8px;
+    padding: 30px;
     border-radius: 8px;
     min-height:max-content;
     color: white;
@@ -308,7 +317,8 @@ a{
 }
 
 .boite:hover{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    filter: drop-shadow(0 0 0.8rem rgba(0,189,149,1));
+    cursor: pointer;
 }
 
 .title-dev{
@@ -340,47 +350,54 @@ a{
 
     /* container afficher  infos */
 .afficherInfos{
-    width: 50%;
+    width: 65%;
     height:max-content;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 25%;
-    right: 50px;
-    padding-top: 20%;
+    top:100px;
+    right: 3%;
+    padding-top: 20px;
+}
+
+.hard-skills-ul-container{
+    width: 100%;
+    color: white;
 }
 
 .title-skills{
     color:white;
-    text-shadow:
-    0 0 54px rgba(0,189,149,1);
-}
-
-.hard-skills-ul-container{
-    margin-top: -50px;
-    width: 100%;
-    color: white;
-    font-size: 1.4rem;
-}
-
-.hard-skills-ul-container li{
-    margin-bottom: 20px;
+    text-shadow: 0 0 54px rgba(0,189,149,1); 
+    font-size: 40px;
 }
 
 .hard-skills-ul-container p{
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color:rgb(0,189,149);
-    
+    font-size: 30px;
+    margin-bottom: 40px;
+    color:rgb(0,189,149); 
+}
+
+.hard-skills-ul-container li{
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .photo-decoratif{
     width: 100%;
     position: relative;
-    top: 3%;
-    left: 15%;
+    top: 15%;
+    left: 30%;
     filter: drop-shadow(0 0 0.25rem rgb(217, 241, 207));
 }
+
+.competence{
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+
     /* fin afficher infos */
 
 /*  fin hard skills */
@@ -390,8 +407,8 @@ a{
     width: 100%;
     height: max-content;
     position: relative;
-    padding: 50px;
-    background-color: rgb(31,39,47);
+    padding: 20px;
+    background-color: rgb(31,39,47,0.4);
 }
 
 .afficherInfos-soft{
@@ -399,14 +416,13 @@ a{
     height: max-content;
     display: flex;
     position: absolute;
-    top: 20px;
-    right: -40px;
+    top: 30px;
+    right: 0px;
 }
 
 .soft-skills-ul-container{
-    padding: 60px;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 20px;
     color: white;
     height: max-content;
 }
@@ -416,7 +432,7 @@ a{
 }
 
 .icon-hobbie{
-    width: 50px;
+    width: 40px;
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -425,10 +441,21 @@ a{
     margin-bottom: 30px;
 }
 
+.soft-skills2 {
+padding-top: 20px;
+}
+
+.soft-skills1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
 /* projet */
 
 #projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-projet{
@@ -460,7 +487,7 @@ a{
     height: 252px;
     margin: 20px;
     margin-bottom: 40px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     cursor: pointer;
 }
 
@@ -498,7 +525,7 @@ a{
 .container-contact{
     width: 100%;
     color: white;
-    background-color:rgb(31,39,47);
+    background-color:rgb(31,39,47,0.4);
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -523,12 +550,12 @@ a{
 
 .tel{
     padding: 30px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .tel a{
-    font-size: 30px;
+    font-size: 20px;
 }
 .resaux{
     display: flex;
@@ -563,14 +590,14 @@ a{
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1);
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     margin-bottom: 20px;
 }
 
 footer{
     width: 100%;
     padding: 20px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     color: white;
     text-align: center;
 }
@@ -592,7 +619,7 @@ footer{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 999; 
     padding-top: 50px; 
     padding-bottom: 50px;
     left: 0;
@@ -679,7 +706,7 @@ footer{
 }
 
 .modal-text-projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     padding: 20px;
     width: 50%;
     color: white;

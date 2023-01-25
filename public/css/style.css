@@ -12,7 +12,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-header , main{
+main{
     width: 80%;
     margin: auto;
 }
@@ -20,7 +20,7 @@ header , main{
 
 h2{
     width: 100%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
     font-size: 3em;
@@ -63,6 +63,16 @@ figcaption{
 /* fin général */
 
 /* header */
+header{
+    background-color: rgb(0,189,149);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: 200;
+}
+
 .topnav{
     width: 100%;
 }
@@ -75,12 +85,44 @@ figcaption{
 }
 
 .nav-bar{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     padding: 20px 40px;
     background-color: rgb(0,189,149);
     color: white;
 }
+
+/* #myLinks a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+    font-weight: 900;  
+    position: relative;
+}
+
+#myLinks a::after{
+    content: '';
+    height: 2px;
+    background: rgb(0, 0, 0);
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+#myLinks .lien:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+#myLinks a{
+    margin: auto;
+    width: max-content;
+    text-align: center;
+} */
 
 a{
     width: 100%;
@@ -154,7 +196,7 @@ a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     margin: 0;
     padding: 0;
 
@@ -187,7 +229,7 @@ a{
 }
 
 .text-presentation h2{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     font-size: 4rem;
     color: rgb(0,189,149);
 }
@@ -212,6 +254,7 @@ a{
 }
 
 .titleOne{
+    margin-top: 80px;
     text-align: center;
     padding: 20px;
     font-size: 3em;
@@ -225,7 +268,7 @@ a{
 
 
 #aPropos{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-aPropos{
@@ -303,14 +346,14 @@ a{
     width: 100%;
     height: max-content;
     position: relative;
-    padding: 50px;
-    background-color: rgb(31,39,47);
+    padding: 20px;
+    background-color: rgb(31,39,47,0.4);
 }
 
 .boite{
-    width: 40%;
-    margin: 48px 8px 8px 8px;
-    padding: 40px;
+    width: 35%;
+    margin: 20px 8px;
+    padding: 30px;
     border-radius: 8px;
     min-height:max-content;
     color: white;
@@ -318,7 +361,7 @@ a{
 }
 
 .boite:hover{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 25px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    filter: drop-shadow(0 0 0.8rem rgba(0,189,149,1));
     cursor: pointer;
 }
 
@@ -352,45 +395,53 @@ a{
     /* container afficher  infos */
 
 .afficherInfos{
-    width: 60%;
+    width: 65%;
     height:max-content;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top:12%;
+    top:0;
     right: 3%;
-    padding-top: 20%;
-}
-.title-skills{
-    color:white;
-    text-shadow: 0 0 54px rgba(0,189,149,1); 
+    padding-top: 20px;
 }
 
 .hard-skills-ul-container{
-    margin-top: -50px;
     width: 100%;
     color: white;
-    font-size: 1.5rem;
 }
 
-.hard-skills-ul-container li{
-    margin-bottom: 20px;
+.title-skills{
+    color:white;
+    text-shadow: 0 0 54px rgba(0,189,149,1); 
+    font-size: 40px;
 }
 
 .hard-skills-ul-container p{
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color:rgb(0,189,149);
-    
+    font-size: 30px;
+    margin-bottom: 40px;
+    color:rgb(0,189,149); 
+}
+
+.hard-skills-ul-container li{
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .photo-decoratif{
     width: 100%;
     position: relative;
-    top: 3%;
-    left: 40%;
+    top: 15%;
+    left: 30%;
     filter: drop-shadow(0 0 0.25rem rgb(217, 241, 207));
 }
+
+.competence{
+    margin-bottom: 10px;
+    padding: 0;
+}
+
 
     /* fin afficher infos */
 
@@ -401,8 +452,8 @@ a{
     width: 100%;
     height: max-content;
     position: relative;
-    padding: 50px;
-    background-color: rgb(31,39,47);
+    padding: 20px;
+    background-color: rgb(31,39,47,0.4);
 }
 
 .afficherInfos-soft{
@@ -410,14 +461,13 @@ a{
     height: max-content;
     display: flex;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 0px;
 }
 
 .soft-skills-ul-container{
-    padding: 60px;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 20px;
     color: white;
     height: max-content;
 }
@@ -427,7 +477,7 @@ a{
 }
 
 .icon-hobbie{
-    width: 50px;
+    width: 40px;
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -436,10 +486,22 @@ a{
     margin-bottom: 30px;
 }
 
+.soft-skills2 {
+padding-top: 20px;
+}
+
+.soft-skills1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+
 /* projet */
 
 #projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-projet{
@@ -450,7 +512,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: auto;
-    scrollbar-color: rgba(0, 0, 0) ;
+    scrollbar-color: rgba(0,189,149) ;
     padding: 50px ;
 }
 
@@ -472,7 +534,7 @@ a{
     margin: 20px;
     border-radius: 8px;
     margin-bottom: 100px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     cursor: pointer;
 }
 
@@ -520,7 +582,7 @@ a{
 .container-contact{
     width: 100%;
     color: white;
-    background-color:rgb(31,39,47);
+    background-color:rgb(31,39,47,0.4);
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -545,13 +607,14 @@ a{
 
 .tel{
     padding: 30px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .tel a{
-    font-size: 30px;
+    font-size: 20px;
 }
+
 .resaux{
     display: flex;
     justify-content: center;
@@ -578,33 +641,33 @@ a{
 
 /* footer */
 
+footer{
+    width: 80%;
+    margin: auto;
+    background-color:  rgba(31,39,47,0.4);
+    color: white;
+    text-align: center;
+}
+
 .title-footer{
     width: 100%;
+    font-size: 2em;
+    font-weight: bolder;
     text-align: center;
     padding: 20px;
-    font-size: 3em;
-    color: white;
-    text-shadow:
-    0 0 54px rgba(0,189,149,1);
-    background-color: rgb(31,39,47);
-    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(31,39,47,0);
 }
 
-footer{
-    width: 100%;
-    /* padding: 20px; */
-    background-color: rgb(31,39,47);
-    color: white;
-    text-align: center;
-}
 
 .nav-footer{
-    margin: 30px;
+    margin: 20px;
 }
 
 .copyright{
     margin-top: 40px;
     font-size: 15px;
+    padding-bottom: 30px;
 }
 
 /*  fin footer */
@@ -615,7 +678,7 @@ footer{
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 999; 
     padding-top: 50px; 
     padding-bottom: 50px;
     left: 0;
@@ -701,7 +764,7 @@ footer{
 }
 
 .modal-text-projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     padding: 20px;
     width: 50%;
     color: white;
@@ -746,7 +809,7 @@ footer{
 .swiper-pagination{
     bottom: 0px !important;
     height: 40px;
-    background-color: rgb(31,39,47,0.6);
+    background-color: rgb(31,39,47,0.4,0.6);
 }
 
 .swiper-pagination-bullet{

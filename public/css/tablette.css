@@ -60,6 +60,16 @@ figcaption{
 /* fin général */
 
 /* header */
+header{
+    background-color: rgb(0,189,149);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: 200;
+}
+
 .bar {
     background: rgb(255, 255, 255);
     height: 10px;
@@ -105,17 +115,17 @@ margin-top: 100px;
     width: 100%;
     background-color: rgb(0,189,149);
     color: white;
-    padding: 0px;
+    padding: 0;
 }
 
 .nav-bar a{
     display: flex;
     justify-content: center;
     padding-right: 60px;
-    padding-top: 30px;
+    padding-top: 20px;
     width: max-content;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 
 }
@@ -154,9 +164,10 @@ margin-top: 100px;
 /* main  */
 
 .titleOne{
+    margin-top: 100px;
     text-align: center;
     padding: 20px;
-    font-size: 1.4em;
+    font-size: 2.2em;
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1);
@@ -169,7 +180,7 @@ margin-top: 100px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     margin: 0;
     padding: 0;
 
@@ -201,7 +212,7 @@ margin-top: 100px;
 }
 
 .text-presentation h2{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     font-size: 2.5rem;
     color: rgb(0,189,149);
 }
@@ -232,7 +243,7 @@ margin-top: 100px;
 /* article a propos */
 
 #aPropos{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-aPropos{
@@ -305,7 +316,7 @@ margin-top: 100px;
     height: max-content;
     position: relative;
     padding: 20px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     display: flex;
     flex-direction: column;
 }
@@ -321,7 +332,8 @@ margin-top: 100px;
 }
 
 .boite:hover{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    filter: drop-shadow(0 0 0.8rem rgba(0,189,149,1));
+    cursor: pointer;
 }
 
 .title-dev{
@@ -394,7 +406,7 @@ display: none;
     width: 100%;
     height: max-content;
     padding: 50px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .afficherInfos-soft{
@@ -430,7 +442,7 @@ display: none;
 /* projet */
 
 #projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
 }
 
 .container-projet{
@@ -462,7 +474,7 @@ display: none;
     height: 252px;
     margin: 10px;
     margin-bottom: 80px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     cursor: pointer;
 }
 
@@ -501,7 +513,7 @@ display: none;
 .container-contact{
     width: 100%;
     color: white;
-    background-color:rgb(31,39,47);
+    background-color:rgb(31,39,47,0.4);
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -526,13 +538,14 @@ display: none;
 
 .tel{
     padding: 30px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .tel a{
-    font-size: 30px;
+    font-size: 20px;
 }
+
 .resaux{
     display: flex;
     justify-content: center;
@@ -572,7 +585,7 @@ display: none;
     color: white;
     text-shadow:
     0 0 54px rgba(0,189,149,1);
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0);
     margin-bottom: 20px;
 }
 
@@ -583,7 +596,7 @@ footer{
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     color: white;
     text-align: center;
 }
@@ -605,7 +618,7 @@ footer{
 .modal {
     display: none;
     position: fixed; 
-    z-index: 1; 
+    z-index: 999;
     padding-top: 50px; 
     padding-bottom: 50px;
     left: 0;
@@ -694,7 +707,7 @@ footer{
 }
 
 .modal-text-projet{
-    background-color: rgb(31,39,47);
+    background-color: rgb(31,39,47,0.4);
     padding: 20px;
     width: 100%;
     color: white;
