@@ -21,7 +21,7 @@ h2{
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
     padding: 20px;
-    font-size: 2.5em;
+    font-size: 2.25em;
     color: white;
     font-weight:900;
 }
@@ -35,7 +35,7 @@ h3{
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 ul{
@@ -72,13 +72,13 @@ header{
 
 .bar {
     background: rgb(255, 255, 255);
-    height: 10px;
-    top: 20px;
-    right: 150px;
+    width: 40px;
+    height: 8px;
     position: absolute;
+    top: 20px;
+    right: 60px;
     transform-origin: 0 0;
     transition: all 500ms;
-    width: 50px;
 }
 
 .bun-top { transform: translate3d(0, 0, 0); }
@@ -121,11 +121,11 @@ margin-top: 100px;
 .nav-bar a{
     display: flex;
     justify-content: center;
-    padding-right: 60px;
+    padding-right: 120px;
     padding-top: 20px;
     width: max-content;
     text-decoration: none;
-    font-size: 20px;
+    font-size:20px;
     color: white;
 
 }
@@ -157,7 +157,7 @@ margin-top: 100px;
     margin: 0px;
     position: absolute;
     top: 20px;
-    left: 150px;
+    left: 60px;
 }
 /*  fin header */
 
@@ -607,7 +607,7 @@ footer{
 
 .copyright{
     margin-top: 40px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 /*  fin footer */

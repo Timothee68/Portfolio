@@ -35,7 +35,7 @@ h3{
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 ul{
@@ -64,13 +64,13 @@ figcaption{
 /* header */
 .bar {
     background: rgb(255, 255, 255);
-    height: 10px;
-    right: 20px;
+    width: 40px;
+    height: 8px;
     position: absolute;
     top: 20px;
+    right: 20px;
     transform-origin: 0 0;
     transition: all 500ms;
-    width: 50px;
 }
 
 .bun-top { transform: translate3d(0, 0, 0); }
@@ -120,7 +120,7 @@ margin-top: 100px;
     width: max-content;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size:20px;
     color: white;
 
 }

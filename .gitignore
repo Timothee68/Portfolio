@@ -1,2 +1,11 @@
 /.htaccess
-/public/img/
+/public/img
+/beers-Api
+/Bootsrap-projet
+/exo-vibes
+/Forum-Exo
+/MVC_cinema
+
+# peut pas pour des projet Symfony ? 
+/FormationSF
+/SiteDEYogaSF
