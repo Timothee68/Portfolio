@@ -233,3 +233,47 @@ window.addEventListener('resize', () =>{
   
   }
 });
+
+
+const switchTheme = document.querySelector('#theme');
+let toggleTheme = 0;
+
+switchTheme.addEventListener('click', () =>{
+
+  if(toggleTheme === 0) {
+
+    document.documentElement.style.setProperty('--backgroundBody',    'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--backgroundHeader',  'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--backgroundSection', 'rgba(31,39,47,0.4)');
+    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--backgroundFooter',  'rgb(31,39,47,0.4)');
+    document.documentElement.style.setProperty('--background',        'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--title',             'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--ecriture',          'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--span',              'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--a',                 'rgb(255,255,255)');
+    document.documentElement.style.setProperty('--hexagone',          'rgb(0, 189, 149)');
+        
+    toggleTheme++;
+    
+  }else{
+
+    document.documentElement.style.setProperty('--backgroundBody',    'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--backgroundHeader',  'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--backgroundSection', 'rgb(0, 0, 0, 0.8)');
+    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--backgroundFooter',  'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--background',        'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--title',             'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--ecriture',          'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--span',              'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--a',                 'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--hexagone',          'rgb(0, 189, 149)');
+
+    toggleTheme--;
+
+  }
+
+});
+
+console.log(document)
