@@ -28,145 +28,61 @@ card.forEach( el => {
 
 //  togg hardskills sofskills
 
-const togg1 = document.getElementById("togg1");
-const togg2 = document.getElementById("togg2");
-const togg3 = document.getElementById("togg3");
-const togg4 = document.getElementById("togg4");
-
-const d1 = document.getElementById("d1");
-const d2 = document.getElementById("d2");
-const d3 = document.getElementById("d3");
-const d4 = document.getElementById("d4");
-
-const toggSoft1 =document.getElementById("toggSoft1");
-const toggSoft2 =document.getElementById("toggSoft2");
-
-const s1 = document.getElementById("s1");
-const s2 = document.getElementById("s2");
-
-if (window.matchMedia("(max-width: 576px)").matches) {
-
-}else{
-  addEventListener("resize", (event) => {
-    d1.style.display = "none";
-    d2.style.display = "none";
-    d3.style.display = "none";
-    d4.style.display = "none";
-    s1.style.display = "none";
-    s2.style.display = "none";
-  });
+  const toggs = [
+    document.getElementById("togg1"),
+    document.getElementById("togg2"),
+    document.getElementById("togg3"),
+    document.getElementById("togg4"),
+    document.getElementById("toggSoft1"),
+    document.getElementById("toggSoft2")
+  ];
   
-}
-
-togg1.addEventListener("click", () => {
-
-  if(getComputedStyle(d1).display != "none"){
-
-    d1.style.display = "none";
-
-  } else { 
-
-    if (window.matchMedia("(max-width: 920px)").matches) {
-       
-        d1.style.display = "contents";
-
+  const ds = [
+    document.getElementById("d1"),
+    document.getElementById("d2"),
+    document.getElementById("d3"),
+    document.getElementById("d4"),
+    document.getElementById("s1"),
+    document.getElementById("s2")
+        ];
+  
+  if (window.matchMedia("(max-width: 576px)").matches) {
+  
+  }else{
+    addEventListener("resize", (event) => {
+      ds.forEach(d => d.style.display = "none");
+    });
+  }
+  
+  const toggleDisplay = (togg, d) => {
+      if(getComputedStyle(d).display != "none"){
+          d.style.display = "none";
       } else {
-        d1.style.display = "flex";
-        d2.style.display = "none";
-      
+          if (window.matchMedia("(max-width: 920px)").matches) {
+              d.style.display = "contents";
+          } else {
+              ds.forEach((item, index) => {
+                  if (index !== ds.indexOf(d)) {
+                      item.style.display = "none";
+                  } else {
+                      d.style.display = "flex";
+                  }
+              });
+          }
       }
   }
-})
-
-togg2.addEventListener("click", () => {
-
-    if(getComputedStyle(d2).display != "none"){
-
-      d2.style.display = "none";
-
-    } else {
-
-        if (window.matchMedia("(max-width: 920px)").matches) {
-
-          d2.style.display = "contents";
-
-        } else {
-            d2.style.display = "flex";
-            d1.style.display = "none";
-         
-        }
+  
+  toggs.forEach((togg, index) => {
+    if (window.matchMedia("(max-width: 919.5px)").matches) {
+      togg.addEventListener("click", () => toggleDisplay(togg, ds[index]));
+    }else{
+      togg.addEventListener("mouseenter", () => toggleDisplay(togg, ds[index]));
     }
-  })
-
-  togg3.addEventListener("click", () => {
-
-    if(getComputedStyle(d3).display != "none"){
-
-      d3.style.display = "none";
-    } else {
-        if (window.matchMedia("(max-width: 920px)").matches) {
-
-          d3.style.display = "contents";
-
-        } else {
-            d3.style.display = "flex";
-            d4.style.display = "none";
-        }
-    }
-  })
-
-  togg4.addEventListener("click", () => {
-    if(getComputedStyle(d4).display != "none"){
-      d4.style.display = "none";
-    } else {
-        if (window.matchMedia("(max-width: 920px)").matches) {
-
-          d4.style.display = "contents";
-        } else {
-            d4.style.display = "flex";
-            d3.style.display = "none";
-        }
-    }
-  })
-
-  toggSoft1.addEventListener("click", () => {
-    if(getComputedStyle(s1).display != "none"){
-      s1.style.display = "none";
-    } else {
-        if (window.matchMedia("(max-width: 920px)").matches) {
-          
-        s1.style.display = "contents";
-
-        } else {
-
-        s1.style.display = "flex";
-        s2.style.display = "none";
-        }
-    }
-  })
-
-  toggSoft2.addEventListener("click", () => {
-    if(getComputedStyle(s2).display != "none"){
-
-      s2.style.display = "none";
-
-    } else {
-
-        if (window.matchMedia("(max-width: 920px)").matches) {
-
-          s2.style.display = "contents";
-
-        } else {
-
-          s2.style.display = "flex";
-          s1.style.display = "none";
-        }
-    }
-  })
-
-
+  });
+  
 
 // modal function
+
 let btn = document.querySelectorAll(".modal-button");
 let modals = document.querySelectorAll('.modal');
 let spans = document.getElementsByClassName("close");
@@ -239,36 +155,37 @@ const switchTheme = document.querySelector('#theme');
 let toggleTheme = 0;
 
 switchTheme.addEventListener('click', () =>{
-
+  let titleOne = document.querySelector('.titleOne');
   if(toggleTheme === 0) {
-
+    titleOne.style.setProperty('animation', ' flashing 2s infinite alternate')
+    document.documentElement.style.setProperty('--background',        'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--backgroundBody',    'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--backgroundHeader',  'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--backgroundSection', 'rgba(31,39,47,0.4)');
     document.documentElement.style.setProperty('--backgroundTitle',   'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--backgroundFooter',  'rgb(31,39,47,0.4)');
-    document.documentElement.style.setProperty('--background',        'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--title',             'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--ecriture',          'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--span',              'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--a',                 'rgb(255,255,255)');
     document.documentElement.style.setProperty('--hexagone',          'rgb(0, 189, 149)');
-        
+    document.documentElement.style.setProperty('--colorHR1',          'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--colorHR2',          'rgb(255,255,255)');
+
     toggleTheme++;
     
   }else{
-
-    document.documentElement.style.setProperty('--backgroundBody',    'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--backgroundHeader',  'rgb(255, 255, 255)');
-    document.documentElement.style.setProperty('--backgroundSection', 'rgb(0, 0, 0, 0.8)');
-    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--backgroundFooter',  'rgb(0, 189, 149)');
+    titleOne.style.setProperty('animation', 'none')
     document.documentElement.style.setProperty('--background',        'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--backgroundBody',    'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--backgroundHeader',  'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--backgroundSection', 'rgb(245,245,245)');
+    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--title',             'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--ecriture',          'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--span',              'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--a',                 'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--hexagone',          'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--hexagone',          '#E6E6FA');
+    document.documentElement.style.setProperty('--colorHR1',          'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--colorHR2',          'rgb(0, 189, 149)');
+
 
     toggleTheme--;
 
@@ -276,4 +193,5 @@ switchTheme.addEventListener('click', () =>{
 
 });
 
-console.log(document)
+
+console.log(titleOne.style);

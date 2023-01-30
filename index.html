@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" media="screen and (min-width: 921px) and (max-width: 1142px)" href="public/css/intermediaire.css" type="text/css">
     <link rel="stylesheet" media="screen and (min-width: 577px) and (max-width: 920px)" href="public/css/tablette.css" type="text/css">
-    <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 576px)" href="public/css/telephone.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 576px)" href="public/css/telephone.css" type="text/css">
     <!-- lien cdn et autres -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Monoton&family=Special+Elite&display=swap" rel="stylesheet">
     <!-- lien canonical -->
     <link rel="canonical" href="https://www.portfolio-lucarelli-timothee.fr/index.html">
     <link rel="alternate" media="only screen and (max-width: 576px)"  href="https://www.portfolio-lucarelli-timothee.fr/index.html">
@@ -52,7 +54,7 @@
                     <a class="lien" href="#aPropos">À propos</a>
                     <a class="lien" href="#projet">Projets</a>
                     <a class="lien" href="#contact">Contact</a>
-                    <!-- <button id="theme">theme</button> -->
+                    <img id="theme" class="logoTheme" src="public/img/themWhite.png" alt="logo du theme de changement de couleur" srcset="">
                     <figure class="resauxSocial">
                         <a href="https://www.linkedin.com/in/timoth%C3%A9e-lucarelli-08b6baa5/" title="linkedin icônes"><img class="imglinkedin" src="public/img/linkedin.png" alt="Linkedin icônes créées par riajulislam - Flaticon"></a>
                     </figure>
@@ -93,7 +95,7 @@
                 </div>
                 <div class="text-presentation">
                     <p>Hello , <span>Je m'appelle</span></p>
-                    <h2>Timothée Lucarelli</h2>
+                    <h2 class="name">Timothée Lucarelli</h2>
                     <button class="btn1"><a class="lien" href="#aPropos">À propos</a></button>
                 </div>
             </div> 
@@ -103,6 +105,7 @@
         <section>
 
             <h2 class="title-hard-skills">Hard Skills</h2>
+            <div class="hr"></div>
             <div class="container-boite">
 
                 <div class="boite" id="togg1">
@@ -112,7 +115,7 @@
                         <img class="iconeHardSkills" src="public/img/coding.png" alt="Coding icons created by Kiranshastry - Flaticon">
                     </div>
                     <p class="p-boite">Je développe des sites dynamiques et statiques</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
 
                 </div>
 
@@ -144,7 +147,7 @@
                         <img class="iconeHardSkills" src="public/img/promo.png" alt=" Code icons created by Freepik - Flaticon">
                     </div>  
                     <p class="p-boite">Mais également des sites web côté serveur</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d2" style="display: none;">
@@ -168,6 +171,7 @@
                 </div>
             </div>
             <h2 class="title-hard-skills">Compétences</h2>
+            <div class="hr"></div>
             <div class="container-boite">
                 <div class="boite" id="togg3">
 
@@ -176,7 +180,7 @@
                         <img class="iconeHardSkills" src="public/img/reglages.png" alt="Equipement icônes créées par Freepik - Flaticon">
                     </div>  
                     <p class="p-boite">Les outils qui complètent mes acquis</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d3" style="display: none;">
@@ -207,7 +211,7 @@
                         <img class="iconeHardSkills" src="public/img/competences.png" alt="Compétence icônes créées par Eucalyp - Flaticon">
                     </div>   
                     <p class="p-boite">J'utilise plusieurs logiques de développement</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
                 </div>
 
                 <div class="afficherInfos" id="d4" style="display: none;">
@@ -234,10 +238,9 @@
 
             </div>
 
-            <h2 class="title-hard-skills">Soft Skills</h2>
-
+            <h2 class="title-hard-skills"> Soft Skills</h2>
+            <div class="hr"></div>
             <div class="container-boite">
-
                 <div class="boite" id="toggSoft1">
 
                     <div  class="boite-logo">
@@ -246,13 +249,13 @@
                     </div>
                    
                     <p class="p-boite">Ce qui me définissent en tant que travailleur</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
                 </div>
 
                 <div class="afficherInfos-soft" id="s1" style="display: none;">
                    
                     <div class="soft-skills-ul-container">
-                        <ul class="soft-skills1">
+                        <ul>
                             <li>Prise de décisions</li>
                             <li>Résolution de problèmes</li>
                             <li>Communication au sein d’une équipe</li>
@@ -265,6 +268,7 @@
                             <li>Curiosité</li>
                         </ul> 
                     </div>
+                    
                 </div>
 
                 <div class="boite" id="toggSoft2">
@@ -274,13 +278,13 @@
                         <img class="iconeHardSkills" src="public/img/passe-temps.png" alt="Loisir icônes créées par GOWI - Flaticon">
                     </div>
                     <p class="p-boite">Des hobbies qui me rendent unique</p>
-                    <p class="p-boite"><span>Cliquez-moi</span></p>   
+                    <p class="p-boite"><span>Plus d'infos</span></p>   
                 </div>
 
                 <div id="s2" class="afficherInfos-soft" style="display: none;">
                    
                     <div class="soft-skills-ul-container">
-                        <ul class="soft-skills2">
+                        <ul>
                             
                             <li><img class="icon-hobbie" src="public/img/une-manette.png" alt="Manette-de-jeu icônes créées par Smashicons - Flaticon">Jeux vidéos</li>
                             <li>Musique<img class="icon-hobbie" src="public/img/la-musique.png" alt="La musique icônes créées par Freepik - Flaticon"></li>
@@ -301,12 +305,14 @@
 
         <section id="projet">
 
-            <h2>Projets</h2>
+            <h2 class="title-hard-skills">Projets</h2>
+            <div class="hr"></div>
+
             <div class="container-projet">
 
                 <!-- projet 1  -->
                 <div id="myBtn" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span >INFOS PROJET</span></p> 
                     <figure>
                         <img href="#myModal1" class="img-projet modal-button" src="public/img/test1.png" alt="projet site de yoga image page home">
                         <figcaption>Site Yoga PHP Symfony</figcaption>
@@ -326,7 +332,7 @@
                                 <p>Pour mon projet de fin de formation, j'ai conçu un site web qui comprend un système de réservation et de paiement en ligne.</p>
                                 <p>L'objectif a été de créer un site pour une professeure de yoga afin d'augmenter sa visibilité et accroître sa clientèle. A ce jour, le projet n'est pas terminé mais je continue à travailler dessus pour le finaliser.</p>
                                 <p>Les fonctionnalités principales mises en place sont :</p>
-                                <ul class="siteYoga">
+                                <ul class="ul-projet">
                                     <li>Système de réservation</li>
                                     <li>Newsletter</li>
                                     <li>Blog</li>
@@ -418,7 +424,7 @@
 
                 <!-- projet 2  -->
                 <div id="myBtn2" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal2" src="public/img/projetForum/projetForum1.png" alt="projet forum image home">
                         <figcaption>Forum PHP-POO-MVP</figcaption>
@@ -480,7 +486,7 @@
 
                  <!-- projet 3  -->
                  <div id="myBtn3" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal3" src="public/img/projet-cinema/test.png" alt="projet cinema image home">
                         <figcaption>Cinéma PHP-POO-MVP</figcaption>
@@ -504,7 +510,7 @@
                                 <p>Le projet comprend la gestion du CRUD ainsi que la liaison de plusieurs relations entre les entités créées, ce qui permet de pouvoir naviguer entre le film, son réalisateur et ses acteurs principaux.</p>
                                 <p>Il amène aussi la possibilité de faire une recherche par nom de film, d'acteur ou de réalisateur via une barre de recherche.</p>
                                 <p>Le site permet d'ajouter/modifier/suppimer les catégories suivantes : </p>
-                                <ul class="siteYoga">
+                                <ul class="ul-projet">
                                     <li>Film</li>
                                     <li>Réalisteur</li>
                                     <li>Acteurs</li>
@@ -556,7 +562,7 @@
 
                  <!-- projet 4  -->
                  <div id="myBtn4" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal4" src="public/img/projetBootstrap/bootstrap2.png" alt="projet bootstrap image">
                         <figcaption>Bootstrap</figcaption>
@@ -622,7 +628,7 @@
                 </div>
                  <!-- projet 5  -->
                   <div id="myBtn5" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal5" src="public/img/projetVibes/Vibes1.png" alt="projet vibes image home">
                         <figcaption>Vibes</figcaption>
@@ -677,7 +683,7 @@
                 </div>
                  <!-- projet 6  -->
                  <div id="myBtn6" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal6" src="public/img/ApiProjet/apibiere.png" alt="Api image">
                         <figcaption>Utilisation d'Api</figcaption>
@@ -734,7 +740,7 @@
                 </div>
                  <!-- projet 7  -->
                  <div id="myBtn7" class="projet-card">
-                    <p class="voirProjet"><span>infos projet</span></p> 
+                    <p class="voirProjet"><span>INFOS PROJET</span></p> 
                     <figure>
                         <img class="img-projet modal-button" href="#myModal7" src="public/img/projetCarteBonjourAlsace/CBA.png" alt="Image du site La carte Bonjour Alsace">
                         <figcaption>Wordpress</figcaption>
@@ -809,7 +815,7 @@
                 <!-- projet 8  -->
                 <div id="myBtn8" class="projet-card">
                     <figure>
-                        <p class="voirProjet"><span>infos projet</span></p> 
+                        <p class="voirProjet"><span>INFOS PROJET</span></p> 
                         <img href="#myModal8" class="img-projet modal-button"  src="public/img/ProjetFormation/formation5.png" alt="projet formation image">
                         <figcaption>Formation en Symfony</figcaption>
                     </figure>
@@ -827,7 +833,7 @@
                                 <!-- <p class="lien-BJA"><a href="./FormationSF/src/Controller/HomeController.php">Site du projet</a></p> -->
                                 <p>Projet consistant à reproduire une interface de gestion d'un centre de formation.</p>
                                 <p>L'idée est de gérer les rôles utilisateurs entre formateur/secrétaire/administrateur, il y a différentes parties.</p>
-                                <ul class="siteYoga">
+                                <ul class="ul-projet">
                                     <li>Interface de gestion secrétaire</li>
                                     <li>Interface de communication entre les formateurs</li>
                                     <li>Interface pour voir les Stagiaire (infos)</li>
@@ -899,8 +905,8 @@
 
         <section id="aPropos">   
 
-                <h2>À propos</h2>
-
+            <h2 class="title-hard-skills">À propos</h2>
+            <div class="hr"></div>
                 <div class="container-aPropos">
                     <div class="textApropos1">
                         <p class="paragraphetap">
@@ -918,7 +924,7 @@
                     <div class="container">
                         <div class="card">
                             <div class="content-card">
-                                <img class="photoPerso" src="public/img/c.jpg" alt="Photo de Timothée lucarelli">
+                                <img class="img3D" src="public/img/c.jpg" alt="Photo de Timothée lucarelli">
                             </div>
                         </div>     
                     </div>
@@ -944,6 +950,7 @@
         <section id="contact">
 
             <h2 class="title-hard-skills">Contactez-moi !</h2>
+            <div class="hr"></div>
             <div class="container-contact">
                 <div class="img-contact">
                     <img class="img-tel" src="public/img/e-mail.png" alt="Email icônes créées par Smashicons - Flaticon">
@@ -955,6 +962,7 @@
                 </div>
             </div>
             <h2 class="title-hard-skills">Réseaux</h2>
+            <div class="hr"></div>
             <div class="resaux">
                 <figure class="resauxSocial2 social-querry">
                     <p>
@@ -978,12 +986,12 @@
     
     <footer>
 
-        <h2 class="title-footer">Navigation</h2> 
+        <!-- <h2 class="title-footer">Navigation</h2> 
             
             <a class="nav-footer lien" href="#aPropos">À propos</a>
             <a class="nav-footer lien" href="#projet">Projets</a>
-            <a class="nav-footer lien" href="#contact">Contact</a>
-
+            <a class="nav-footer lien" href="#contact">Contact</a> -->
+        <p>Made with Love by Timothée Lucarelli</p>  
         <p class="copyright">&copy; 2023 - Portfolio Timothée LUCARELLI. All Rights Reserved. </p>
 
     </footer>
@@ -1007,12 +1015,12 @@
         sr.reveal('.titleOne')
         sr.reveal('.hexagone', {origin: 'left',reset: true })
         sr.reveal('.boxshadow', {origin: 'left',reset: true })
-        sr.reveal('.photoPerso', {origin: 'top',reset: true })
-        sr.reveal('.textApropos1', {origin: 'bottom'})
-        sr.reveal('.textApropos2', {origin: 'bottom'})
+        sr.reveal('.img3D', {origin: 'top',reset: true })
+        // sr.reveal('.textApropos1', {origin: 'bottom'})
+        // sr.reveal('.textApropos2', {origin: 'bottom'})
         sr.reveal('.imglinkedin-contact', {origin: 'left',reset: true})
         sr.reveal('.imgGit-contact', {origin: 'right',reset: true})
-        
+        sr.reveal('.projet-card', {reset: true})
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
