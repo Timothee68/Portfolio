@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: 1.5s all ease-in-out;
 }
 
 :root{
@@ -25,13 +24,12 @@ body{
     width: 100%;
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--backgroundBody);
-
+    transition: 0.5s all ease-in-out;
 }
 
 main{
     width: 80%;
     margin: auto;
-   
 }
 
 
