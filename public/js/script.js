@@ -169,22 +169,24 @@ switchTheme.addEventListener('click', () =>{
     document.documentElement.style.setProperty('--hexagone',          'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--colorHR1',          'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--colorHR2',          'rgb(255,255,255)');
+    document.documentElement.style.setProperty('--filter',            'rgb(217, 241, 207)');
 
     toggleTheme++;
     
   }else{
     titleOne.style.setProperty('animation', 'none')
     document.documentElement.style.setProperty('--background',        'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--backgroundBody',    'rgb(255, 255, 255)');
-    document.documentElement.style.setProperty('--backgroundHeader',  'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--backgroundBody',    'rgb(253, 253, 253)');
+    document.documentElement.style.setProperty('--backgroundHeader',  'RGB(224,255,255)');
     document.documentElement.style.setProperty('--backgroundSection', 'rgb(245,245,245)');
-    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--backgroundTitle',   'rgb(253, 253, 253)');
     document.documentElement.style.setProperty('--title',             'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--ecriture',          'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--span',              'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--hexagone',          '#E6E6FA');
-    document.documentElement.style.setProperty('--colorHR1',          'rgb(0, 189, 149)');
-    document.documentElement.style.setProperty('--colorHR2',          'rgb(0, 189, 149)');
+    document.documentElement.style.setProperty('--hexagone',          'RGB(224,255,255)');
+    document.documentElement.style.setProperty('--colorHR1',          'RGB(0,0,0)');
+    document.documentElement.style.setProperty('--colorHR2',          'RGB(0, 0, 0)');
+    document.documentElement.style.setProperty('--filter',            'rgba(112,128,144,0.5)');
 
 
     toggleTheme--;

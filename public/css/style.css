@@ -16,6 +16,7 @@
     --hexagone :  rgb(0,189,149);
     --colorHR1 :  rgb(0,189,149);
     --colorHR2 : rgb(255, 255, 255);
+    --filter : rgb(217, 241, 207);
 }
 
 /* Général */
@@ -233,7 +234,7 @@ a{
 }
 
 .boxshadow {
-    filter: drop-shadow(0 0 0.75rem rgb(202, 238, 188));
+    filter: drop-shadow(0 0 0.75rem var(--filter));
 }
 
 .hexagone{
@@ -260,6 +261,7 @@ a{
     font-size: 4rem;
     color: rgb(0,189,149);
     font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
 }
 
 .text-presentation p {
@@ -280,7 +282,7 @@ a{
     background: linear-gradient(90deg, rgba(24,206,136,1) 20%, rgba(0,189,149,1) 85%);
     border-radius: 20px;
     border: none;
-    filter: drop-shadow(0 0 0.75rem rgb(217, 241, 207));
+    filter: drop-shadow(0 0 0.75rem var(--filter));
 }
 
 .btn1 a{
@@ -394,7 +396,7 @@ a{
     position: relative;
     top: 15%;
     left: 30%;
-    filter: drop-shadow(0 0 0.25rem rgb(217, 241, 207));
+    filter: drop-shadow(0 0 0.15rem var(--filter));
 }
 
 
@@ -469,7 +471,7 @@ a{
 ::-webkit-scrollbar-thumb {
     background:var(--background);
     border-radius: 25px;
-    filter: drop-shadow(0 0 0.75rem rgb(217, 241, 207));
+    filter: drop-shadow(0 0 0.75rem var(--filter));
 }
 
 .projet-card{
@@ -483,7 +485,7 @@ a{
 }
 
 .projet-card:hover{
-    box-shadow: 0 0 34px var(--backgroundHeader); 
+    box-shadow: 0 0 34px var(--filter); 
 }
 
 .img-projet{
@@ -826,7 +828,7 @@ a{
 }    
 
 .imgGit-contact:hover, .imglinkedin-contact:hover{
-    box-shadow: 0 0 54px rgba(0,189,149,1); 
+    box-shadow: 0 0 54px var(--filter); 
 }
 /*  fin contact */
 
