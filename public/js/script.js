@@ -151,6 +151,8 @@ window.addEventListener('resize', () =>{
 });
 
 
+// theme color 
+
 const switchTheme = document.querySelector('#theme');
 let toggleTheme = 0;
 
