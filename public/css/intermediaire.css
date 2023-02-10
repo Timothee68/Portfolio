@@ -18,6 +18,20 @@ h2{
     margin-right: 40px;
 }
 
+
+.logoTheme{
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 18.5%;
+    width:35px;
+    height: 35px;
+    background-color: var(--colorHR2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
 /*  fin header */
 
 /* presentation photo */

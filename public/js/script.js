@@ -158,8 +158,10 @@ let toggleTheme = 0;
 
 switchTheme.addEventListener('click', () =>{
   let titleOne = document.querySelector('.titleOne');
+  let themeImg = document.querySelector('.logoTheme');
   if(toggleTheme === 0) {
     titleOne.style.setProperty('animation', ' flashing 2s infinite alternate')
+    themeImg.src = "public/img/lune.png";
     document.documentElement.style.setProperty('--background',        'rgb(0, 189, 149)');
     document.documentElement.style.setProperty('--backgroundBody',    'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--backgroundHeader',  'rgb(0, 189, 149)');
@@ -177,6 +179,7 @@ switchTheme.addEventListener('click', () =>{
     
   }else{
     titleOne.style.setProperty('animation', 'none')
+    themeImg.src = "public/img/soleil.png";
     document.documentElement.style.setProperty('--background',        'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--backgroundBody',    'rgb(253, 253, 253)');
     document.documentElement.style.setProperty('--backgroundHeader',  'RGB(224,255,255)');

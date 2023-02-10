@@ -173,14 +173,23 @@ a{
 .logoTheme{
     width: 60px;
     position: absolute;
-    top: 10px;
-    right: 60px;
-    width:60px;
-    height: 60px;
-    background-color: var(--background);
+    top: 20px;
+    left: 18.5%;
+    width:35px;
+    height: 35px;
+    background-color: var(--colorHR2);
     border: none;
     border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
 
+.figHeader{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width:auto;
+    height: 40px;
 }
 /*  fin header */
 
@@ -481,7 +490,7 @@ a{
     border-radius: 25px;
     margin-bottom: 100px;
     background-color: var(--backgroundSection);
-    transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.5s;
 }
 
 .projet-card:hover{
@@ -495,6 +504,13 @@ a{
     object-fit: cover;
     padding: 20px;
     cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+
+.img-projet:hover{
+    padding: 0 0 20px 0;
+    max-width: 100%;
 }
 
 .voirProjet{
@@ -574,7 +590,7 @@ a{
 .modal-header {
     border-bottom: solid 2px rgb(24,206,136);
     padding: 2px 16px;
-    background-color: #000000;
+    background-color:var(--backgroundBody);
     color: white;
 }
 
@@ -583,7 +599,7 @@ a{
     padding: 20px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    background-color: #000;
+    background-color:var(--backgroundBody);
 }
 
 .modal-text-projet{
@@ -620,7 +636,8 @@ a{
 .modal-footer {
     border-top: solid 2px  rgb(24,206,136);
     background-color: #000000;
-    color: var(--ecriture);
+    color:rgba(255,255,255);
+    background-color:var(--backgroundBody);
 }
 
 .modal-footer h3{
@@ -670,7 +687,7 @@ a{
 .swiper-pagination{
     bottom: 0px ;
     height: 40px;
-    background-color: var(--backgroundBody);
+    background-color: rgb(0,0,0);
 }
 
 .swiper-pagination-bullet{
@@ -683,6 +700,16 @@ a{
 
 .swiper-pagination-bullet-active{
     background-color: rgba(0,189,149,1) !important;
+}
+
+.swiper-button-next{
+    color: rgb(24,206,136) !important;
+    background-color:var(--backgroundBody);
+}
+
+.swiper-button-prev{
+    color: rgb(24,206,136) !important;
+    background-color:var(--backgroundBody);
 }
 
 /* fin modal projet */
@@ -707,7 +734,10 @@ a{
     height: auto;
     text-align: left;
 }
-
+.textApropos3{
+    width: 100%;
+    text-align: center;
+}
 .paragraphetap{
     margin-bottom:20px;
 }

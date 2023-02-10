@@ -82,6 +82,17 @@ margin-top: 100px;
     top: 20px;
     left: 60px;
 }
+
+
+.logoTheme{
+    left: 40px;
+}
+
+.figHeader{
+    position: absolute;
+    top: 40px;
+    left: -250px;
+}
 /*  fin header */
 
 /* main  */
